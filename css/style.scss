@@ -1,4 +1,7 @@
+// variables
 @import "variable";
+
+// components
 @import "./components/all";
 @import "./components/header";
 @import "./components/button";
@@ -8,3 +11,7 @@
 @import "./components/category";
 @import "./components/blog";
 @import "./components/works";
+@import "./components/footer";
+
+// pages
+@import './pages/all';

@@ -1422,4 +1422,11 @@ h5.static-heading {
   margin-bottom: 0;
   line-height: 24px;
 }
+
+.footer {
+  background-color: #33362f;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 /*# sourceMappingURL=style.css.map */
