@@ -1,0 +1,16 @@
+.half-circle {
+    background-color: $theme-color;    
+    color: $white;
+    padding: 11px 0px;
+    border-radius: 0 30px 30px 0;
+    width: 50px;
+    border: none;
+    color: $white;
+    text-align: center;
+    padding-right: 5px;
+}
+.theme-button {
+    background: $theme-color;
+    color: $white !important;
+    padding: 10px 40px;
+}

@@ -1,0 +1,73 @@
+/* 05. blog area css here */
+.blog_section {
+	background: #fff;
+    padding: 63px 0 70px;
+    margin-bottom: 65px;
+    @media #{$large-mobile}{
+        padding: 53px 0 60px;
+        margin-bottom: 54px;
+    }
+}
+
+.blog_content {
+	padding: 23px 20px 0px 3px;
+    background: #fff;
+    & h4{
+        font-size: 17px;
+        text-transform: capitalize;
+        line-height: 18px;
+        margin-bottom: 5px;
+        font-weight: 500;
+        @media #{$desktop-device}{
+            font-size: 16px;
+        }
+        @media #{$tablet-device}{
+            font-size: 16px;
+            line-height: 23px;
+        }
+        @media #{$large-mobile}{
+           font-size: 15px;
+        }
+        & a{
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+.articles_date {
+    margin-bottom: 9px;
+    & p{
+        font-size: 14px;
+        line-height: 15px;
+        & a{
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.blog_footer{
+    margin-top: 17px;
+    & > a{
+       font-size: 14px;
+        line-height: 24px;
+        display:inline-block;
+        text-transform: uppercase;
+        position: relative;
+        &:hover{
+            color: $theme-color;
+        }
+        &::before{
+            position: absolute;
+            font-family: "Ionicons";
+            content: "\f362";
+            color: $theme-color;
+            right: -23px;
+            font-size: 18px;
+            z-index: 9;
+            top: 0px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.about-info-list ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.about-info-content{
+    h6 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 0;
+        line-height: 24px;
+    }
+}

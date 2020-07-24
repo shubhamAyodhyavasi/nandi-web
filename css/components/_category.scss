@@ -1,0 +1,68 @@
+/*04. banner section css here */
+.banner_area{
+    margin-bottom: 65px;
+    @media #{$large-mobile}{
+      margin-bottom: 23px;
+    }
+    &.mb-68{
+        @media #{$large-mobile}{
+           margin-bottom: 29px;
+        }
+    }
+}
+.single_banner{
+    @media #{$large-mobile}{
+       margin-bottom: 30px;
+    }
+}
+
+.banner_thumb{
+    position: relative;
+    transition: .3s;
+     @media #{$large-mobile}{
+      text-align: center;
+    }
+    &:hover{
+        &::before{
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: all 900ms linear;
+        }
+        &::after{
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: all 900ms linear;
+        }
+    }
+    &::before{
+        background:rgba(255, 255, 255, 0.3);
+        bottom: 0;
+        content: "";
+        left: 50%;
+        position: absolute;
+        right: 51%;
+        top: 0;
+        opacity: 1;
+        pointer-events: none;
+    }
+    &::after{
+        background:rgba(255, 255, 255, 0.6);
+        bottom: 50%;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        opacity: 1;
+        pointer-events: none;
+    }
+    & img{
+        transition: .3s;
+		@media #{$large-mobile}{
+		  width: 100%;
+		}
+    }
+    
+}
