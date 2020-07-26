@@ -1,0 +1,44 @@
+.product-list {
+    border: 1px solid #eee;
+    .pl-image {
+        position: relative;
+        img {
+            width:100%;
+        }
+    }
+    .pl-name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        /* right: 0; */
+        background: #80b82db0;
+        padding: 10px;
+        color: #fff;
+    }
+    .price_box {
+        display: flex;
+        flex-direction: column;
+        .current_price {
+            margin-bottom: 10px;
+        }
+    }
+
+    .about-product{
+        table {
+           width:100%;
+           margin:20px 0;
+        }
+        th {
+            border: 1px solid #eee;
+            border-left: 0;
+            padding-left:10px;
+        }
+    
+        td {
+            border: 1px solid #eee;
+            border-right: 0;
+            padding-left:10px;
+        }
+    }
+
+}

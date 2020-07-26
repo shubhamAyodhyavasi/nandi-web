@@ -224,4 +224,15 @@ figure{
 .heading-wrapper{
     background-color: $grey-color;
 }
-
+.sick-fixed {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+  }
+  
+  .sick-abs {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  

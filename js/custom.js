@@ -119,3 +119,102 @@ function typeText(){
         });
     }
 })(jQuery);	
+
+
+// radio tab farmer registration
+function ShowHideMe(RadioChecked) {
+    var DivToShowHide = document.getElementById("DivToShowHide");
+
+    if(document.getElementById("Rescard").checked) {
+        DivToShowHideOther.style.display = "none";
+        DivToShowHide.style.display = "block";
+        document.getElementById("primarycardnow").innerHTML = RadioChecked.value;
+    }
+    else if(document.getElementById("Dricard").checked) {
+        DivToShowHideOther.style.display = "none";
+        DivToShowHide.style.display = "block";
+        document.getElementById("primarycardnow").innerHTML = RadioChecked.value;
+    }
+    else if(document.getElementById("Passport").checked) {
+        DivToShowHideOther.style.display = "none";
+        DivToShowHide.style.display = "block";
+        document.getElementById("primarycardnow").innerHTML = RadioChecked.value;
+    }
+    else if(document.getElementById("Other").checked) {
+        DivToShowHideOther.style.display = "block";
+        DivToShowHide.style.display = "block";
+        document.getElementById("primarycardnow").innerHTML = RadioChecked.value;
+    }
+}
+
+
+// jQuery for side bar sticky
+
+jQuery(window).on("load", function () {
+    function setScroll(itemSelector, cb) {
+        var sideItem = jQuery(itemSelector);
+        if (!sideItem || sideItem.length < 1) {
+            return
+        }
+        sideItem.removeAttr("style").removeClass("sick-abs").removeClass("sick-fixed");
+        var offset = sideItem.offset();
+        var parentOffset = sideItem.parent().offset();
+        var parentHeight = sideItem.parent().height();
+        var itemHeight = sideItem.outerHeight();
+        var width = sideItem.outerWidth();
+        var leftSetAbs = offset.left - parentOffset.left;
+        var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
+        var fixTopPos = 0;
+        var whenScrollPos = offset.top
+        var whenStop = parentHeight + parentOffset.top - itemHeight
+        console.log("whenScrollPos", whenScrollPos);
+        console.log("leftSetAbs", leftSetAbs);
+        jQuery(window).scroll(function () {
+            if (parentHeight !== sideItem.parent().height()) {
+                parentHeight = sideItem.parent().height()
+                whenStop = parentHeight + parentOffset.top - itemHeight
+            }
+            if (windowWidth > 992) {
+                var scrollPos = jQuery(this).scrollTop();
+                // console.log("scrollPos",scrollPos);
+                console.log("parentHeight", parentHeight);
+                console.log("itemHeight", itemHeight);
+                if (parentHeight > itemHeight) {
+                    if (scrollPos > whenStop) {
+                        sideItem.removeClass("sick-fixed").addClass("sick-abs").css({
+                            position: "absolute",
+                            top: parentHeight - itemHeight + "px",
+                            width: width + "px",
+                            left: leftSetAbs + "px"
+                        });
+                        console.log("scrollPos", scrollPos);
+                    } else if (whenScrollPos <= scrollPos) {
+                        sideItem.removeClass("sick-abs").addClass("sick-fixed").removeAttr("style").css({
+                            // width: width + "px",
+                            top: fixTopPos + "100px",
+                            left: offset.left + "px"
+                        });
+                        sideItem[0].style.setProperty("width", width + "px", "important")
+
+                    } else {
+                        sideItem.removeAttr("style").removeClass("sick-abs").removeClass("sick-fixed");
+                    }
+                } else {
+                    sideItem.removeAttr("style").removeClass("sick-abs").removeClass("sick-fixed");
+                }
+            } else {
+                sideItem.removeAttr("style").removeClass("sick-abs").removeClass("sick-fixed");
+            }
+            if (typeof cb === 'function') {
+                cb()
+            }
+        });
+    }
+
+    setScroll(".product-map");
+    jQuery(window).resize(function () {
+        jQuery(window).unbind("scroll")
+        setScroll(".product-map");
+    })
+});

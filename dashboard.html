@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandikrushi</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- new icons -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- new linear icons -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+
+    <div class="main-wrapper">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="top-left"><i class="fa fa-globe"></i> Language</p>
+                    </div>
+                    <div class="col text-right">
+                        <p class="top-right"><i class="fa fa-phone"></i> 0000XXXXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header dark-bg">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <!-- <div class="col-md-3"> -->
+                    <div class="logo-wrapper">
+                        <img class="img-fluid" src="images/logo.png">
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="col-md-7 m-auto"> -->
+                    <div class="search-wrapper">
+                        <div class="search-fields">
+                            <div class="search-city">
+                                <input placeholder="Enter City" type="text">
+                            </div>
+                            <div class="search-category">
+                                <select name="category" id="cate">
+                                    <option value="">Select categories</option>
+                                    <option value="CULTIVATOR">CULTIVATOR</option>
+                                    <option value="DESI COW MILK (A2 MILK)">DESI COW MILK (A2 MILK)</option>
+                                    <option value="DESI COWS FOR SALE">DESI COWS FOR SALE</option>
+                                    <option value="DESI SEEDS">DESI SEEDS</option>
+                                    <option value="DOCTOR">DOCTOR</option>
+                                    <option value="DRY FRUITS / NUTS">DRY FRUITS / NUTS</option>
+                                    <option value="ECO FRIENDLY">ECO FRIENDLY</option>
+                                    <option value="ENGLISH VEGETABLES">ENGLISH VEGETABLES</option>
+                                    <option value="EXACAVATOR">EXACAVATOR</option>
+                                </select>
+                            </div>
+                            <div class="search-item">
+                                <input placeholder="Search Item" type="text">
+                            </div>
+                        </div>
+                        <button class="search-btn half-circle">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <!-- </div> -->
+                    <div class="menus">
+                        <a href="#">Natural Farmers</a>
+                    </div>
+                    <!-- <div class="col-md-2 m-auto text-right"> -->
+                    <div class="login-wrapper">
+                        <button class="login">
+                            <i class="fa fa-user"></i> Login
+                        </button>
+                        <button class="cart half-circle">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- bannerx section -->
+        <div class="breadcrumbs_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb_content">
+                            <h3>Register as Farmer</h3>
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li>Register as Farmer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- dashboard design -->
+      <section class="dashboard d-farmer">
+        <div class="account_dashboard">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <!-- Nav tabs -->
+                    <div class="dashboard_tab product-map">
+                        <ul role="tablist" class="nav flex-column dashboard-list">
+                            <li><a href="#addproduct" data-toggle="tab" class="nav-link active">Add Product</a></li>
+                            <li> <a href="#myproducts" data-toggle="tab" class="nav-link">My Products</a></li>
+                            <li><a href="#orders" data-toggle="tab" class="nav-link">Orders</a></li>
+                            <li><a href="#pending" data-toggle="tab" class="nav-link active">Pending orders</a></li>
+                            <li> <a href="#purchase" data-toggle="tab" class="nav-link">My Purchases</a></li>
+                            <li><a href="#profile" data-toggle="tab" class="nav-link">Profile</a></li>
+                            <li><a href="#" data-toggle="tab" class="nav-link">Logout</a></li> 
+                        </ul>
+                    </div>    
+                </div>
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <!-- Tab panes -->
+                    <div class="tab-content dashboard_content">
+                        <div class="tab-pane fade show active" id="dashboard">
+                            <h3>Dashboard </h3>
+                            <div class="profile-wrapper row">
+                                <div class="col-sm-12 col-md-3 col-lg-3">
+                                    <div class="avtar-innner">
+                                        <img src="images/user.png" alt="avtar">
+                                    </div>
+                                </div>
+                                <div class="align-self-center col-lg-9 col-md-9 col-sm-12">
+                                    <div class="avtar-title">
+                                        <h5>Rajendra Suresh Raut</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda animi consectetur quis numquam. Ad pariatur doloribus hic eius cumque illo omnis repudiandae dignissimos velit repellendus!</p>
+                                        <p>Lorem ispsum dolor sit amet consectetur, adipisicing elit. Assumenda animi consectetur quis numquam. Ad pariatur doloribus hic eius cumque illo omnis repudiandae dignissimos velit repellendus!</p>
+                                        <a href="#" class="theme-button btn">Send Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="orders">
+                            <h3>Products</h3>
+                            <div class="product_container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <article class="single_product">
+                                            <figure>
+                                                <div class="product_thumb">
+                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product20.jpg" alt=""></a>
+                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product21.jpg" alt=""></a>
+                                                    <div class="label_product">
+                                                        <span class="label_sale">Sale</span>
+                                                        <span class="label_new">New</span>
+                                                    </div>
+                                                    <div class="action_links">
+                                                        <ul>
+                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
+                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="product_content">
+                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
+                                                    <p><a href="#">Fruits</a></p>
+                                                    <div class="price_box">
+                                                        <span class="current_price">$55.00</span>
+                                                        <span class="old_price">$235.00</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </article>
+                                    </div>
+                                    <div class="col-3">
+                                        <article class="single_product">
+                                            <figure>
+                                                <div class="product_thumb">
+                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product18.jpg" alt=""></a>
+                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product19.jpg" alt=""></a>
+                                                    <div class="label_product">
+                                                        <span class="label_sale">Sale</span>
+                                                        <span class="label_new">New</span>
+                                                    </div>
+                                                    <div class="action_links">
+                                                        <ul>
+                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
+                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="product_content">
+                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
+                                                    <p><a href="#">Fruits</a></p>
+                                                    <div class="price_box">
+                                                        <span class="current_price">$55.00</span>
+                                                        <span class="old_price">$235.00</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </article>
+                                    </div>
+                                    <div class="col-3">
+                                        <article class="single_product">
+                                            <figure>
+                                                <div class="product_thumb">
+                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product16.jpg" alt=""></a>
+                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product17.jpg" alt=""></a>
+                                                    <div class="label_product">
+                                                        <span class="label_sale">Sale</span>
+                                                        <span class="label_new">New</span>
+                                                    </div>
+                                                    <div class="action_links">
+                                                        <ul>
+                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
+                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="product_content">
+                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
+                                                    <p><a href="#">Fruits</a></p>
+                                                    <div class="price_box">
+                                                        <span class="current_price">$55.00</span>
+                                                        <span class="old_price">$235.00</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </article>
+                                    </div>
+                                    <div class="col-3">
+                                        <article class="single_product">
+                                            <figure>
+                                                <div class="product_thumb">
+                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product14.jpg" alt=""></a>
+                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product15.jpg" alt=""></a>
+                                                    <div class="label_product">
+                                                        <span class="label_sale">Sale</span>
+                                                        <span class="label_new">New</span>
+                                                    </div>
+                                                    <div class="action_links">
+                                                        <ul>
+                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
+                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="product_content">
+                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
+                                                    <p><a href="#">Fruits</a></p>
+                                                    <div class="price_box">
+                                                        <span class="current_price">$55.00</span>
+                                                        <span class="old_price">$235.00</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </article>
+                                    </div>
+                                    <div class="col-3">
+                                        <article class="single_product">
+                                            <figure>
+                                                <div class="product_thumb">
+                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product18.jpg" alt=""></a>
+                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product19.jpg" alt=""></a>
+                                                    <div class="label_product">
+                                                        <span class="label_sale">Sale</span>
+                                                        <span class="label_new">New</span>
+                                                    </div>
+                                                    <div class="action_links">
+                                                        <ul>
+                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
+                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="product_content">
+                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
+                                                    <p><a href="#">Fruits</a></p>
+                                                    <div class="price_box">
+                                                        <span class="current_price">$55.00</span>
+                                                        <span class="old_price">$235.00</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </article>
+                                    </div>
+                                    <div class="col-3">
+                                        <article class="single_product">
+                                            <figure>
+                                                <div class="product_thumb">
+                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product16.jpg" alt=""></a>
+                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product17.jpg" alt=""></a>
+                                                    <div class="label_product">
+                                                        <span class="label_sale">Sale</span>
+                                                        <span class="label_new">New</span>
+                                                    </div>
+                                                    <div class="action_links">
+                                                        <ul>
+                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
+                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="product_content">
+                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
+                                                    <p><a href="#">Fruits</a></p>
+                                                    <div class="price_box">
+                                                        <span class="current_price">$55.00</span>
+                                                        <span class="old_price">$235.00</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </article>
+                                    </div>
+                                    <div class="col-3">
+                                        <article class="single_product">
+                                            <figure>
+                                                <div class="product_thumb">
+                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product14.jpg" alt=""></a>
+                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product15.jpg" alt=""></a>
+                                                    <div class="label_product">
+                                                        <span class="label_sale">Sale</span>
+                                                        <span class="label_new">New</span>
+                                                    </div>
+                                                    <div class="action_links">
+                                                        <ul>
+                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
+                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
+                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
+                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <figcaption class="product_content">
+                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
+                                                    <p><a href="#">Fruits</a></p>
+                                                    <div class="price_box">
+                                                        <span class="current_price">$55.00</span>
+                                                        <span class="old_price">$235.00</span>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="downloads">
+                            <h3>Booking Transition</h3>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>                                                
+                                            <th>Date</th>
+                                            <th>Product</th>
+                                            <th>Seller Name</th>
+                                            <th>Seller Location</th>
+                                            <th>Quantity Brought</th>	 	 	 	
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>May 10, 2018</td>
+                                            <td><span class="success">Completed</span></td>
+                                            <td>Rajendra Suresh Raut </td>
+                                            <td><a href="cart.html" class="view">Indore</a></td>                                                
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>May 10, 2018</td>
+                                            <td><span class="success">Completed</span></td>
+                                            <td>Rajendra Suresh Raut </td>
+                                            <td><a href="cart.html" class="view">Indore</a></td>                                                
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="address">
+                            <h3>Receiving Transition</h3>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Product</th>
+                                            <th>Customer Name</th>
+                                            <th>Customer Location</th>
+                                            <th>Quantity sold</th>	 	 	 	 	
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>May 10, 2018</td>
+                                            <td><span class="success">Completed</span></td>
+                                            <td>$25.00 for 1 item </td>
+                                            <td><a href="cart.html" class="view">view</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>May 10, 2018</td>
+                                            <td>Processing</td>
+                                            <td>$17.00 for 1 item </td>
+                                            <td><a href="cart.html" class="view">view</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- dashboard design end -->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h2>About</h2>
+                    <div class="content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sapiente accusamus,
+                            odit odio quisquam nihil veritatis saepe aliquam provident possimus illo facere obcaecati
+                            aperiam ducimus incidunt.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2>Other Links</h2>
+                    <div class="content">
+                        <ul>
+                            <li class="footer-item"><a href="#">Home</a></li>
+                            <li class="footer-item"><a href="#">About</a></li>
+                            <li class="footer-item"><a href="#">Contact</a></li>
+                            <li class="footer-item"><a href="#">Terms</a></li>
+                            <li class="footer-item"><a href="#">Privacy</a></li>
+                            <li class="footer-item"><a href="#">Blogs</a></li>
+                            <li class="footer-item"><a href="#">Android App</a></li>
+                            <li class="footer-item"><a href="#">Ios App</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2>Contact</h2>
+                    <div class="content">
+                        <p>Payakarao Bonangi, Paravada, Visakhapatnam - 531021</p>
+                        <a href="https://goo.gl/maps/C1ZN9Yo996Whoenz5" target="_blank">
+                            <img class="img-fluid map-img" src="./images/footer-map.png" alt="map" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2>Find us on</h2>
+                    <div class="content content-img">
+                        <a href="#">
+                            <img src="./images/app-store.png" class="img-fluid" alt="app store">
+                        </a>
+                        <br />
+                        <a href="#">
+                            <img src="./images/play-store.png" class="img-fluid" alt="play store">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-7">
+                    <div class="copyright_area">
+                        <p>Copyright © 2020 <a href="#">support@nandikrushi.in</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5">
+                    <div class="footer_payment">
+                        <ul>
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- custom-js -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- custom-js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

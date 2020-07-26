@@ -1,18 +1,85 @@
 .dark-bg{
     background-color: $header-color;
-   }
-.top-header {
-    p{
-    margin-bottom: 0;
-    padding: 5px;
-    }    
 }
-.search-wrapper{
-    input[type="text"] {
-        width: calc(100% - 80px);
-        padding: 10px;
+.top-header, .main-header{
+    .container{
+        @media (min-width: 1200px){
+            max-width: 1180px;
+        }
     }
 }
+.main-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo-wrapper{
+    width: 200px;
+    padding-right: 20px;
+}
+.search-wrapper{
+    width: 600px;
+}
+.top-header {
+    p{
+        margin-bottom: 0;
+        padding: 5px;
+    }    
+}
+.login-wrapper{
+    display: flex;
+    .login{
+        display: flex;
+        width: 75px;
+        align-items: center;
+        margin-right: 3px;
+        > i{
+            margin-right: 10px;    
+        }
+    }
+}
+.menus a{
+    color: #ffffff;
+    &:hover{
+        color: $theme-color;
+    }
+}
+.search-wrapper{
+    display:flex;
+    .search-fields{
+        display: flex;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        overflow: hidden;
+        & > div{
+            display: flex;
+            background-color: $white;
+            &:not(:last-child){
+                &:after{
+                    content: "";
+                    display: block;
+                    height: calc(100% - 16px);
+                    margin-top: 8px;
+                    width: 1px;
+                    background-color: rgba($black, .1);
+                }
+            }
+        }
+        input[type="text"], select{
+            border: none;
+            padding: 10px 15px;
+            padding-left: 15px;
+        }
+        select{
+            appearance: none;
+            padding-right: 30px;
+            background-image: url(../../images/icons/down-arrow.svg);
+            background-size: 15px;
+            background-position: center right 15px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
 .login {
     width: calc(100% - 80px);
     border-radius: 30px 0 0 30px;
