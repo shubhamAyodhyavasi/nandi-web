@@ -280,21 +280,113 @@ figure {
   background-color: #20202D;
 }
 
+@media (min-width: 1200px) {
+  .top-header .container, .main-header .container {
+    max-width: 1180px;
+  }
+}
+
+.main-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo-wrapper {
+  width: 200px;
+  padding-right: 20px;
+}
+
+.search-wrapper {
+  width: 600px;
+}
+
 .top-header p {
   margin-bottom: 0;
   padding: 5px;
 }
 
-.search-wrapper input[type="text"] {
-  width: calc(100% - 80px);
-  padding: 10px;
+.login-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-wrapper .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3px;
+}
+
+.login-wrapper .login > i {
+  margin-right: 10px;
+}
+
+.menus a {
+  color: #ffffff;
+}
+
+.menus a:hover {
+  color: #80B82D;
+}
+
+.search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-wrapper .search-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  overflow: hidden;
+}
+
+.search-wrapper .search-fields > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.search-wrapper .search-fields > div:not(:last-child):after {
+  content: "";
+  display: block;
+  height: calc(100% - 16px);
+  margin-top: 8px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-wrapper .search-fields input[type="text"], .search-wrapper .search-fields select {
+  border: none;
+  padding: 10px 15px;
+  padding-left: 15px;
+}
+
+.search-wrapper .search-fields select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-right: 30px;
+  background-image: url(../../images/icons/down-arrow.svg);
+  background-size: 15px;
+  background-position: center right 15px;
+  background-repeat: no-repeat;
 }
 
 .login {
   width: calc(100% - 80px);
   border-radius: 30px 0 0 30px;
   background: #80B82D;
-  color: #fff;
+  color: #ffffff;
   padding: 11px;
   border: none;
 }
@@ -368,19 +460,19 @@ figure {
 
 .half-circle {
   background-color: #80B82D;
-  color: #fff;
+  color: #ffffff;
   padding: 11px 0px;
   border-radius: 0 30px 30px 0;
   width: 50px;
   border: none;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding-right: 5px;
 }
 
 .theme-button {
   background: #80B82D;
-  color: #fff !important;
+  color: #ffffff !important;
   padding: 10px 40px;
 }
 
@@ -412,11 +504,11 @@ figure {
   line-height: 1.4;
   letter-spacing: normal;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
 }
 
 .circle-white {
-  background: #fff;
+  background: #ffffff;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -426,7 +518,7 @@ figure {
 }
 
 .read-more {
-  background: #fff;
+  background: #ffffff;
 }
 
 .solution-desp h3 {
@@ -445,19 +537,6 @@ h5.static-heading {
 
 .banner-inner {
   height: 70vh;
-}
-
-.search-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.search-wrapper input[type="text"] {
-  margin: 0;
-  border: none;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
 }
 
 .banner-inner {
@@ -499,14 +578,14 @@ h5.static-heading {
   font-weight: bold;
   letter-spacing: 0.1rem;
   overflow: hidden;
-  color: #fff;
+  color: #ffffff;
   min-height: 3rem;
   line-height: 1.5;
 }
 
 .typing-effect p span.typed-text {
   font-weight: normal;
-  color: #fff;
+  color: #ffffff;
   white-space: pre;
 }
 
@@ -781,7 +860,7 @@ h5.static-heading {
   opacity: 0;
   visibility: hidden;
   z-index: 9;
-  background: #fff;
+  background: #ffffff;
   padding: 4px 7px;
   -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
@@ -826,7 +905,7 @@ h5.static-heading {
   top: 20px;
   left: 20px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background: #80B82D;
   font-size: 12px;
   height: 20px;
@@ -841,7 +920,7 @@ h5.static-heading {
   top: 20px;
   right: 20px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background: #80B82D;
   font-size: 12px;
   height: 20px;
@@ -1492,7 +1571,7 @@ h5.static-heading {
 
 .footer {
   background-color: #33362f;
-  color: #fff;
+  color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1541,7 +1620,7 @@ h5.static-heading {
   text-align: center;
   line-height: 2.5;
   font-size: 16px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
 }
 
 .footer_payment ul li:last-child {
@@ -1553,7 +1632,7 @@ h5.static-heading {
 }
 
 .footer_payment ul li:hover {
-  background: #fff;
+  background: #ffffff;
   color: #80B82D;
 }
 
@@ -1564,7 +1643,7 @@ h5.static-heading {
 .footer_bottom {
   padding: 10px 0;
   background: #80B82D;
-  color: #fff;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1629,7 +1708,7 @@ h5.static-heading {
 .account_form button {
   background: #80B82D;
   border: 0;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -1843,7 +1922,7 @@ h5.static-heading {
 .cart_submit button {
   background: #222222;
   border: 0;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   font-size: 12px;
   font-weight: 500;
@@ -1871,7 +1950,7 @@ h5.static-heading {
 .coupon_inner button {
   background: #222222;
   border: 0;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   font-size: 12px;
   font-weight: 500;
@@ -1937,7 +2016,7 @@ h5.static-heading {
 }
 
 .coupon_code h3 {
-  color: #fff;
+  color: #ffffff;
   line-height: 36px;
   padding: 5px 15px;
   background: #222222;
@@ -1989,7 +2068,7 @@ h5.static-heading {
 
 .checkout_btn a {
   background: #80B82D;
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   padding: 3px 14px;
   line-height: 30px;
@@ -2001,7 +2080,7 @@ h5.static-heading {
 
 .checkout_btn a:hover {
   background: #222222;
-  color: #fff;
+  color: #ffffff;
 }
 
 .coupon_area {
@@ -2283,7 +2362,7 @@ h5.static-heading {
 .product_nav ul li a {
   background: #80B82D;
   border-radius: 3px;
-  color: #fff;
+  color: #ffffff;
   display: block;
   font-size: 15px;
   height: 30px;
@@ -2357,7 +2436,7 @@ h5.static-heading {
   line-height: 42px;
   text-transform: capitalize;
   min-width: 270px;
-  color: #fff;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2557,7 +2636,7 @@ h5.static-heading {
 .product_review_form button {
   border: none;
   background: #222222;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 500;
   padding: 5px 15px 3px;
@@ -2570,7 +2649,7 @@ h5.static-heading {
 
 .product_review_form button:hover {
   background: #80B82D;
-  color: #fff;
+  color: #ffffff;
 }
 
 .product_info_content p {
@@ -2769,7 +2848,7 @@ h5.static-heading {
 
 .s-tab-zoom.owl-carousel .owl-nav div:hover {
   background: #80B82D;
-  color: #fff;
+  color: #ffffff;
 }
 
 .s-tab-zoom.owl-carousel .owl-nav div.owl-next {
@@ -3220,7 +3299,7 @@ h5.static-heading {
 
 .dashboard_tab_button ul li a {
   font-size: 14px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 500;
   text-transform: capitalize;
   background: #222222;
@@ -3229,7 +3308,7 @@ h5.static-heading {
 
 .dashboard_tab_button ul li a:hover {
   background: #80B82D;
-  color: #fff;
+  color: #ffffff;
 }
 
 .dashboard_tab_button ul li a.active {
@@ -3427,7 +3506,7 @@ h5.static-heading {
   width: 80px;
   background: #222222;
   border: 0;
-  color: #fff;
+  color: #ffffff;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 13px;
@@ -3484,7 +3563,7 @@ h5.static-heading {
   line-height: 30px;
   padding: 5px 10px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background: #222222;
   font-weight: 500;
 }
@@ -3528,7 +3607,7 @@ h5.static-heading {
   line-height: 27px;
   padding: 5px 10px;
   text-transform: capitalize;
-  color: #fff;
+  color: #ffffff;
   background: #222222;
   font-weight: 500;
   margin-bottom: 0;
@@ -3561,7 +3640,7 @@ h5.static-heading {
   line-height: 30px;
   padding: 5px 10px;
   text-transform: capitalize;
-  color: #fff;
+  color: #ffffff;
   background: #80B82D;
   font-weight: 500;
   margin-bottom: 0;
