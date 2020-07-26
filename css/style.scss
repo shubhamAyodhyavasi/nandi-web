@@ -4,6 +4,7 @@
 // components
 @import "./components/all";
 @import "./components/header";
+@import "./components/headbnr";
 @import "./components/button";
 @import "./components/banner";
 @import "./components/typing";
@@ -15,3 +16,7 @@
 
 // pages
 @import './pages/all';
+@import './pages/cart';
+@import './pages/product-detail';
+@import './pages/my-account';
+@import './pages/registration';

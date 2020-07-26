@@ -3,4 +3,76 @@
     color: $white;
     padding-top: 50px;
     padding-bottom: 50px;
+    h2 {
+        font-size: 17px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+}
+.content{
+
+    img {
+        margin-bottom: 10px;
+        width: 70%;
+    }
+    &.content-img {
+        width: 140px;
+    }
+    p {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+    }
+} 
+.footer_payment{
+    text-align: right;
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    & ul{
+        & li{
+            display: inline-block;
+            margin-right: 6px;
+            background: $theme-color;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 2.5;
+            font-size: 16px;
+            border: 1px solid $white;
+            &:last-child{
+                margin-right: 0;            }
+            & a{
+                & img{
+                    border-radius: 3px;
+                }
+            }
+            &:hover{
+                background: $white;
+                color: $theme-color;
+                & a{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.footer_bottom{
+    padding: 10px 0;
+    background: $secondary_color;
+    color: $white;
+    @media #{$large-mobile}{
+       padding: 24px 0 25px;
+    }
+}
+.map-img {
+    width: 75%;
+    @media #{$tablet-device}{
+        width: 100%;
+     }
 }
