@@ -276,6 +276,10 @@ figure {
   margin-bottom: 100px;
 }
 
+.heading-wrapper {
+  background-color: #ededed;
+}
+
 .dark-bg {
   background-color: #20202D;
 }
@@ -3205,6 +3209,11 @@ h5.static-heading {
   .product_right_sidebar .single-zoom-thumb {
     width: 90%;
   }
+}
+
+.seller-wrapper:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 /*  18. my account css here */
