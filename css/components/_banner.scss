@@ -3,9 +3,15 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    @media #{$large-mobile}{
+        background-image: linear-gradient(282deg, rgba(174,213,121,0), rgba(99,144,56,0.8)),url(./../images/bg-header.jpg);
+        }
 }
 .container-banner__family {
     width: 30%;
+}
+.banner-wrapper {
+    position: relative;
 }
 .banner-fixed {
     position: absolute;
@@ -16,6 +22,9 @@
     color: #fff;
     padding: 20px;
     text-align: center;
+    @media #{$large-mobile}{
+        position: static;
+        }
 }
 .banner-heading {
     font-size: 30px;
@@ -53,13 +62,14 @@ h5.static-heading {
     font-weight: 700;
 }
 
+
 .banner-inner {
-    height: 70vh;
-}
-.banner-inner {
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
+    @media #{$large-mobile}{
+        min-height: unset;
+        }
 }
 
 .banner-inner:after {
@@ -82,4 +92,24 @@ h5.static-heading {
 .typing-effect p span.typed-text {
     color: #c7f584;
     margin-left: 10px;
+}
+
+#output {
+    height: 130px;
+    display:flex;
+    flex-direction: column;
+    h1{
+        text-align: left;
+        font-size: 70px;
+        word-spacing: -5px;
+        margin: 0px;
+        color:#fff;
+        margin-bottom:7px;
+    }
+    p{
+        text-align: left;
+        font-size: 33px;
+        margin-top: -5px;
+        color:#fff;
+    }
 }

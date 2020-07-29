@@ -74,7 +74,7 @@
                     </div>
                     <!-- </div> -->
                     <div class="menus">
-                        <a href="#">Natural Farmers</a>
+                        <a href="farmer-reg.html">Natural Farmers</a>
                     </div>
                     <!-- <div class="col-md-2 m-auto text-right"> -->
                     <div class="login-wrapper">
@@ -188,125 +188,224 @@
                                     </div>
 
 
-                                    <div class="tab-section">
-                                        <h5 class="bg-light font-weight-bold p-3">Select Organic Certification details /
+                                    <div class="bg-light p-4 tab-section w-100">
+                                        <h5 class="font-weight-bold">Select Organic Certification details /
                                             जैविक प्रमाणीकरण विवरण का चयन करें</h5>
                                         <hr>
-                                        <input type="radio" name="primarycard" id="Rescard" onclick="ShowHideMe(this)"
-                                            value="Residence card" />Self Declared Natural farmer / स्व घोषित प्राकृतिक
-                                        किसान
-                                        <input type="radio" name="primarycard" id="Dricard" onclick="ShowHideMe(this)"
-                                            value="Driving card" />Self Declared Natural farmer / स्व घोषित प्राकृतिक
-                                        किसान
-                                        <input type="radio" name="primarycard" id="Passport" onclick="ShowHideMe(this)"
-                                            value="Passport" />PGS India Organic / पीजीएस इंडिया ऑर्गेनिक
-                                        <input type="radio" name="primarycard" id="Other" onclick="ShowHideMe(this)"
-                                            value="Other" />Organic FPO / ऑर्गेनिक एफपीओ
-                                        <input type="radio" name="primarycard" id="Passport" onclick="ShowHideMe(this)"
-                                            value="Passport" />Organic FPC / ऑर्गेनिक एफपीसी
-                                        <input type="radio" name="primarycard" id="Other" onclick="ShowHideMe(this)"
-                                            value="Other" />Other Organic Certification / अन्य जैविक प्रमाणीकरण
-
-                                        <div id="DivToShowHide" style="display: none">
-                                            <div id="DivToShowHideOther" style="display: none">
-                                                <br />What <span class="primarycardnow">other</span> card will you use?
-                                                <input type="text" name="OtherCard" />
-                                            </div>
-                                            <br />Type here your <span id="primarycardnow"></span> number:
-                                            <input type="text" name="IdentityNumber" />
+                                        <label>
+                                            <input type="radio" name="primarycard" id="Rescard"
+                                                onclick="ShowHideMe(this)" value="Residence card" />Self Declared
+                                            Natural farmer / स्व घोषित प्राकृतिक
+                                            किसान
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="primarycard" id="Dricard"
+                                                onclick="ShowHideMe(this)" value="Driving card" />Self Declared Natural
+                                            farmer / स्व घोषित प्राकृतिक
+                                            किसान
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="primarycard" id="Passport"
+                                                onclick="ShowHideMe(this)" value="Passport" />PGS India Organic / पीजीएस
+                                            इंडिया ऑर्गेनिक
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="primarycard" id="Other" onclick="ShowHideMe(this)"
+                                                value="Other" />Organic FPO / ऑर्गेनिक एफपीओ
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="primarycard" id="Organic"
+                                                onclick="ShowHideMe(this)" value="Passport" />Organic FPC / ऑर्गेनिक
+                                            एफपीसी
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="primarycard" id="Certificate" onclick="ShowHideMe(this)"
+                                                value="Other" />Other Organic Certification / अन्य जैविक प्रमाणीकरण
+                                        </label>
+                                       
+                                        <div class="radio-one DivToShowHide Rescard">
+                                            <p>As you are choosing self declaration means that you are fully responsible to deliver organic products to your consumers and the nandikrushi will ocassionally visits to your farm to verify. / जैसा कि आप स्वयं घोषणा का चयन कर रहे हैं, इसका मतलब है कि आप अपने उपभोक्ताओं को जैविक उत्पाद देने के लिए पूरी तरह से जिम्मेदार हैं और नंदिकृष्णा आपके खेत में सत्यापित करने के लिए समुद्री यात्रा करेंगे।</p>
                                         </div>
+                                        <div class="radio-two DivToShowHide Dricard">
+                                            <form action="#">
+                                                <div class="p-4 row">
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Reference Number</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Upload Certificate</label>
+                                                        <input type="file">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="radio-three DivToShowHide Passport">
+                                            <form action="#">
+                                                <div class="p-4 row">
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Reference Number</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Upload Certificate</label>
+                                                        <input type="file">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="radio-four DivToShowHide Other">
+                                            <form action="#">
+                                                <div class="p-4 row">
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Reference Number</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Upload Certificate</label>
+                                                        <input type="file">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="radio-five DivToShowHide Organic">
+                                            <form action="#">
+                                                <div class="p-4 row">
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Reference Number</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Upload Certificate</label>
+                                                        <input type="file">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="radio-six DivToShowHide Certificate">
+                                            <form action="#">
+                                                <div class="p-4 row">
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Certificate Name</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Reference Number</label>
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-lg-12 mb-20">
+                                                        <label>Upload Certificate</label>
+                                                        <input type="file">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 mb-20 mt-3">
+                                        <input id="account" type="checkbox" data-target="createp_account">
+                                        <label class="d-inline" for="account" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-controls="collapseOne">By clicking the
+                                            'Register' button,
+                                            you confirm that you accept our Terms & conditions and Privacy Policy.
+                                            * indicates Required fields / आवश्यक स्थान को दर्शाएं</label>
+                                    </div>
+
+                                    <div class="col-12 mb-20 mt-3">
+                                        <button type="submit" class="border-0 m-auto rounded-pill text-center theme-button w-100">Register | पंजीकरण करें</button>
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <div class="signup text-center">                               
+                                            <p class="l-signup">
+                                               Have an account?<a href="login.html"> Sign in</a>
+                                            </p> 
+                                        </div>
+                                    </div>
+
+                                </div>
                             </form>
-
-                            <div class="col-12 mb-20">
-                                <input id="account" type="checkbox" data-target="createp_account">
-                                <label class="d-inline" for="account" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-controls="collapseOne">By clicking the 'Register' button,
-                                    you confirm that you accept our Terms & conditions and Privacy Policy.
-                                    * indicates Required fields / आवश्यक स्थान को दर्शाएं</label>
-                            </div>
-
                         </div>
-                        </form>
                     </div>
                 </div>
             </div>
-    </div>
-    </section>
-    <!-- Farmer registration section end -->
+        </section>
+        <!-- Farmer registration section end -->
 
-    <!-- footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <h2>About</h2>
-                    <div class="content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sapiente accusamus,
-                            odit odio quisquam nihil veritatis saepe aliquam provident possimus illo facere obcaecati
-                            aperiam ducimus incidunt.
-                        </p>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <h2>About</h2>
+                        <div class="content">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sapiente
+                                accusamus,
+                                odit odio quisquam nihil veritatis saepe aliquam provident possimus illo facere
+                                obcaecati
+                                aperiam ducimus incidunt.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h2>Other Links</h2>
-                    <div class="content">
-                        <ul>
-                            <li class="footer-item"><a href="#">Home</a></li>
-                            <li class="footer-item"><a href="#">About</a></li>
-                            <li class="footer-item"><a href="#">Contact</a></li>
-                            <li class="footer-item"><a href="#">Terms</a></li>
-                            <li class="footer-item"><a href="#">Privacy</a></li>
-                            <li class="footer-item"><a href="#">Blogs</a></li>
-                            <li class="footer-item"><a href="#">Android App</a></li>
-                            <li class="footer-item"><a href="#">Ios App</a></li>
-                        </ul>
+                    <div class="col-md-3 col-sm-6">
+                        <h2>Other Links</h2>
+                        <div class="content">
+                            <ul>
+                                <li class="footer-item"><a href="#">Home</a></li>
+                                <li class="footer-item"><a href="#">About</a></li>
+                                <li class="footer-item"><a href="#">Contact</a></li>
+                                <li class="footer-item"><a href="#">Terms</a></li>
+                                <li class="footer-item"><a href="#">Privacy</a></li>
+                                <li class="footer-item"><a href="#">Blogs</a></li>
+                                
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h2>Contact</h2>
-                    <div class="content">
-                        <p>Payakarao Bonangi, Paravada, Visakhapatnam - 531021</p>
-                        <a href="https://goo.gl/maps/C1ZN9Yo996Whoenz5" target="_blank">
-                            <img class="img-fluid map-img" src="./images/footer-map.png" alt="map" />
-                        </a>
+                    <div class="col-md-3 col-sm-6">
+                        <h2>Contact</h2>
+                        <div class="content">
+                            <p>Payakarao Bonangi, Paravada, Visakhapatnam - 531021</p>
+                            <a href="https://goo.gl/maps/C1ZN9Yo996Whoenz5" target="_blank">
+                                <img class="img-fluid map-img" src="./images/footer-map.png" alt="map" />
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h2>Find us on</h2>
-                    <div class="content content-img">
-                        <a href="#">
-                            <img src="./images/app-store.png" class="img-fluid" alt="app store">
-                        </a>
-                        <br />
-                        <a href="#">
-                            <img src="./images/play-store.png" class="img-fluid" alt="play store">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer_bottom">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-7">
-                    <div class="copyright_area">
-                        <p>Copyright © 2020 <a href="#">support@nandikrushi.in</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-5">
-                    <div class="footer_payment">
-                        <ul>
-                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="#"><i class="ion-social-youtube"></i></a></li>
-                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        </ul>
+                    <div class="col-md-3 col-sm-6">
+                        <h2>Find us on</h2>
+                        <div class="content content-img">
+                            <a href="#">
+                                <img src="./images/app-store.png" class="img-fluid" alt="app store">
+                            </a>
+                            <br />
+                            <a href="#">
+                                <img src="./images/play-store.png" class="img-fluid" alt="play store">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="copyright_area">
+                            <p>Copyright © 2020 <a href="#">support@nandikrushi.in</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="footer_payment">
+                            <ul>
+                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

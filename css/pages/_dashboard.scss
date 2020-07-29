@@ -1,0 +1,28 @@
+.dashboard_tab {
+    background: #20202d;
+    .nav-link {
+        color: #fff;
+        padding: 20px 10px;
+        border-bottom: 1px solid #ffffff4d;
+        font-size: 16px;
+        &.active {
+            background: #80b82d;
+        }
+    }      
+}
+.d-profile {
+    font-size: 20px;
+    padding: 5px;
+} 
+.d-porduct{
+    table{
+        width:100%;
+        margin: 10px 0;
+    }
+    th,
+    td {
+        border: 1px solid #efefef;
+        width: 50%;
+        padding: 10px;
+    }
+} 

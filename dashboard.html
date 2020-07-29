@@ -74,7 +74,7 @@
                     </div>
                     <!-- </div> -->
                     <div class="menus">
-                        <a href="#">Natural Farmers</a>
+                        <a href="farmer-reg.html">Natural Farmers</a>
                     </div>
                     <!-- <div class="col-md-2 m-auto text-right"> -->
                     <div class="login-wrapper">
@@ -107,332 +107,435 @@
             </div>
         </div>
 
-      <!-- dashboard design -->
-      <section class="dashboard d-farmer">
-        <div class="account_dashboard">
-            <div class="row">
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <!-- Nav tabs -->
-                    <div class="dashboard_tab product-map">
-                        <ul role="tablist" class="nav flex-column dashboard-list">
-                            <li><a href="#addproduct" data-toggle="tab" class="nav-link active">Add Product</a></li>
-                            <li> <a href="#myproducts" data-toggle="tab" class="nav-link">My Products</a></li>
-                            <li><a href="#orders" data-toggle="tab" class="nav-link">Orders</a></li>
-                            <li><a href="#pending" data-toggle="tab" class="nav-link active">Pending orders</a></li>
-                            <li> <a href="#purchase" data-toggle="tab" class="nav-link">My Purchases</a></li>
-                            <li><a href="#profile" data-toggle="tab" class="nav-link">Profile</a></li>
-                            <li><a href="#" data-toggle="tab" class="nav-link">Logout</a></li> 
-                        </ul>
-                    </div>    
-                </div>
-                <div class="col-sm-12 col-md-9 col-lg-9">
-                    <!-- Tab panes -->
-                    <div class="tab-content dashboard_content">
-                        <div class="tab-pane fade show active" id="dashboard">
-                            <h3>Dashboard </h3>
-                            <div class="profile-wrapper row">
-                                <div class="col-sm-12 col-md-3 col-lg-3">
-                                    <div class="avtar-innner">
-                                        <img src="images/user.png" alt="avtar">
-                                    </div>
-                                </div>
-                                <div class="align-self-center col-lg-9 col-md-9 col-sm-12">
-                                    <div class="avtar-title">
-                                        <h5>Rajendra Suresh Raut</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda animi consectetur quis numquam. Ad pariatur doloribus hic eius cumque illo omnis repudiandae dignissimos velit repellendus!</p>
-                                        <p>Lorem ispsum dolor sit amet consectetur, adipisicing elit. Assumenda animi consectetur quis numquam. Ad pariatur doloribus hic eius cumque illo omnis repudiandae dignissimos velit repellendus!</p>
-                                        <a href="#" class="theme-button btn">Send Message</a>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- dashboard design -->
+        <section class="dashboard d-farmer">
+            <div class="account_dashboard">
+                <div class="row w-100">
+                    <div class="col-sm-12 col-md-2 col-lg-2 d-flex">
+                        <!-- Nav tabs -->
+                        <div class="dashboard_tab product-map sick-fixed w-100">
+                            <ul role="tablist" class="nav flex-column dashboard-list">
+                                <li><a href="#addproduct" data-toggle="tab" class="nav-link active">Add Product</a></li>
+                                <li> <a href="#myproducts" data-toggle="tab" class="nav-link">My Products</a></li>
+                                <li><a href="#orders" data-toggle="tab" class="nav-link">Orders</a></li>
+                                <li><a href="#pending" data-toggle="tab" class="nav-link">Pending orders</a></li>
+                                <li> <a href="#purchase" data-toggle="tab" class="nav-link">My Purchases</a></li>
+                                <li><a href="#profile" data-toggle="tab" class="nav-link">Profile</a></li>
+                                <li><a href="#" data-toggle="tab" class="nav-link">Logout</a></li>
+                            </ul>
                         </div>
-                        <div class="tab-pane fade" id="orders">
-                            <h3>Products</h3>
-                            <div class="product_container">
+                    </div>
+                    <div class="col-sm-12 col-md-10 col-lg-10">
+                        <!-- Tab panes -->
+                        <div class="dashboard_content mb-5 tab-content">
+                            <div class="tab-pane fade show active" id="addproduct">
+                                <h3 class="my-4">Home | Dashboard | Add Product </h3>
                                 <div class="row">
-                                    <div class="col-3">
-                                        <article class="single_product">
-                                            <figure>
-                                                <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product20.jpg" alt=""></a>
-                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product21.jpg" alt=""></a>
-                                                    <div class="label_product">
-                                                        <span class="label_sale">Sale</span>
-                                                        <span class="label_new">New</span>
-                                                    </div>
-                                                    <div class="action_links">
-                                                        <ul>
-                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
-                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
-                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
-                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
-                                                        </ul>
-                                                    </div>
+                                    <div class="col-md-7">
+                                        <form action="#" class="shadow">
+                                            <div class="p-4 row">
+                                                <div class="col-lg-12 mb-20">
+                                                    <label>Upload Product Image</label>
+                                                    <input type="file">
                                                 </div>
-                                                <figcaption class="product_content">
-                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
-                                                    <p><a href="#">Fruits</a></p>
-                                                    <div class="price_box">
-                                                        <span class="current_price">$55.00</span>
-                                                        <span class="old_price">$235.00</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
+                                                <div class="col-lg-6 mb-20">
+                                                    <label>Choose category</label>
+                                                    <select class="select_option" name="cuntry" id="country">
+                                                        <option value="2">Choose category</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 mb-20">
+                                                    <label>Choose Sub category</label>
+                                                    <select class="select_option" name="cuntry" id="country">
+                                                        <option value="2">Choose Sub category</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4 mb-20">
+                                                    <label>Price</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="col-lg-4 mb-20">
+                                                    <label>Enter Quantity</label>
+                                                    <input type="number">
+                                                </div>
+                                                <div class="col-lg-4 mb-20">
+                                                    <label>Choose Units</label>
+                                                    <select class="select_option" name="cuntry" id="country">
+                                                        <option value="2">Choose units</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6 mb-20">
+                                                    <label for="country">Total Quantity available</label>
+                                                    <input type="number">
+                                                </div>
+                                                <div class="col-lg-6 mb-20">
+                                                    <label for="country">Minumum order to deliver</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="col-lg-12 mb-20">
+                                                    <label for="country">Write small description about the
+                                                        product...</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="col-lg-12 mb-20 p-3">
+                                                    <a href="#" class="theme-button">Add Product</a>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="col-3">
-                                        <article class="single_product">
-                                            <figure>
-                                                <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product18.jpg" alt=""></a>
-                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product19.jpg" alt=""></a>
-                                                    <div class="label_product">
-                                                        <span class="label_sale">Sale</span>
-                                                        <span class="label_new">New</span>
-                                                    </div>
-                                                    <div class="action_links">
-                                                        <ul>
-                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
-                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
-                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
-                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class="product_content">
-                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
-                                                    <p><a href="#">Fruits</a></p>
-                                                    <div class="price_box">
-                                                        <span class="current_price">$55.00</span>
-                                                        <span class="old_price">$235.00</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-3">
-                                        <article class="single_product">
-                                            <figure>
-                                                <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product16.jpg" alt=""></a>
-                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product17.jpg" alt=""></a>
-                                                    <div class="label_product">
-                                                        <span class="label_sale">Sale</span>
-                                                        <span class="label_new">New</span>
-                                                    </div>
-                                                    <div class="action_links">
-                                                        <ul>
-                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
-                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
-                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
-                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class="product_content">
-                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
-                                                    <p><a href="#">Fruits</a></p>
-                                                    <div class="price_box">
-                                                        <span class="current_price">$55.00</span>
-                                                        <span class="old_price">$235.00</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-3">
-                                        <article class="single_product">
-                                            <figure>
-                                                <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product14.jpg" alt=""></a>
-                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product15.jpg" alt=""></a>
-                                                    <div class="label_product">
-                                                        <span class="label_sale">Sale</span>
-                                                        <span class="label_new">New</span>
-                                                    </div>
-                                                    <div class="action_links">
-                                                        <ul>
-                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
-                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
-                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
-                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class="product_content">
-                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
-                                                    <p><a href="#">Fruits</a></p>
-                                                    <div class="price_box">
-                                                        <span class="current_price">$55.00</span>
-                                                        <span class="old_price">$235.00</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-3">
-                                        <article class="single_product">
-                                            <figure>
-                                                <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product18.jpg" alt=""></a>
-                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product19.jpg" alt=""></a>
-                                                    <div class="label_product">
-                                                        <span class="label_sale">Sale</span>
-                                                        <span class="label_new">New</span>
-                                                    </div>
-                                                    <div class="action_links">
-                                                        <ul>
-                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
-                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
-                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
-                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class="product_content">
-                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
-                                                    <p><a href="#">Fruits</a></p>
-                                                    <div class="price_box">
-                                                        <span class="current_price">$55.00</span>
-                                                        <span class="old_price">$235.00</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-3">
-                                        <article class="single_product">
-                                            <figure>
-                                                <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product16.jpg" alt=""></a>
-                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product17.jpg" alt=""></a>
-                                                    <div class="label_product">
-                                                        <span class="label_sale">Sale</span>
-                                                        <span class="label_new">New</span>
-                                                    </div>
-                                                    <div class="action_links">
-                                                        <ul>
-                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
-                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
-                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
-                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class="product_content">
-                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
-                                                    <p><a href="#">Fruits</a></p>
-                                                    <div class="price_box">
-                                                        <span class="current_price">$55.00</span>
-                                                        <span class="old_price">$235.00</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-3">
-                                        <article class="single_product">
-                                            <figure>
-                                                <div class="product_thumb">
-                                                    <a class="primary_img" href="product-details.html"><img src="images/product/product14.jpg" alt=""></a>
-                                                    <a class="secondary_img" href="product-details.html"><img src="images/product/product15.jpg" alt=""></a>
-                                                    <div class="label_product">
-                                                        <span class="label_sale">Sale</span>
-                                                        <span class="label_new">New</span>
-                                                    </div>
-                                                    <div class="action_links">
-                                                        <ul>
-                                                            <li class="add_to_cart"><a href="cart.html" title="" data-original-title="Add to cart"><span class="lnr lnr-cart"></span></a></li>
-                                                            <li class="quick_button"><a href="#" data-toggle="modal" data-target="#modal_box" title="" data-original-title="quick view"> <span class="lnr lnr-magnifier"></span></a></li>
-                                                            <li class="wishlist"><a href="wishlist.html" title="" data-original-title="Add to Wishlist"><span class="lnr lnr-heart"></span></a></li>
-                                                            <li class="compare"><a href="#" title="" data-original-title="Add to Compare"><span class="lnr lnr-sync"></span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <figcaption class="product_content">
-                                                    <h4 class="product_name"><a href="product-details.html">Quisque In Arcu</a></h4>
-                                                    <p><a href="#">Fruits</a></p>
-                                                    <div class="price_box">
-                                                        <span class="current_price">$55.00</span>
-                                                        <span class="old_price">$235.00</span>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
+                                    <div class="col-md-4 shadow">
+                                        <h5 class="d-profile text-center">Preview</h5>
+                                        <img id="pic" src="http://placehold.it/400" alt="your image">
+                                        <div class="p-3 pl-detail">
+                                            <div class="product_name">
+                                                <h4 class="mb-1">Category</h4>
+                                                <p class="mb-0">Sub category</p>
+                                            </div>
+                                            <div class="price_box">
+                                                <span class="current_price">Rs.3000.00</span>
+                                            </div>
+
+                                            <div class="about-product">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Quantity</th>
+                                                            <td>30</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Min-order</th>
+                                                            <td>1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Description</p>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="downloads">
-                            <h3>Booking Transition</h3>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>                                                
-                                            <th>Date</th>
-                                            <th>Product</th>
-                                            <th>Seller Name</th>
-                                            <th>Seller Location</th>
-                                            <th>Quantity Brought</th>	 	 	 	
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>May 10, 2018</td>
-                                            <td><span class="success">Completed</span></td>
-                                            <td>Rajendra Suresh Raut </td>
-                                            <td><a href="cart.html" class="view">Indore</a></td>                                                
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 10, 2018</td>
-                                            <td><span class="success">Completed</span></td>
-                                            <td>Rajendra Suresh Raut </td>
-                                            <td><a href="cart.html" class="view">Indore</a></td>                                                
-                                            <td>1</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="tab-pane fade" id="myproducts">
+                                <h3 class="my-4">Home | Dashboard | Products</h3>
+                                <div class="d-porduct row">
+                                    <div class="col-md-4 shadow mb-5">
+                                        <img id="pic" src="http://placehold.it/400" alt="your image">
+                                        <div class="p-3 pl-detail">
+                                            <div class="product_name">
+                                                <h4 class="mb-1">Category</h4>
+                                                <p class="mb-0">Sub category</p>
+                                            </div>
+                                            <div class="about-product">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Price</th>
+                                                            <td>Rs.3000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Quantity</th>
+                                                            <td>30</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Min-order</th>
+                                                            <td>1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Description</p>
+                                            </div> 
+                                            <div class="btn-section d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary my-2">Edit</a>
+                                                <a href="#" class="btn btn-danger my-2">Stock unavailable</a>
+                                            </div>                                           
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 shadow mb-5">
+                                        <img id="pic" src="http://placehold.it/400" alt="your image">
+                                        <div class="p-3 pl-detail">
+                                            <div class="product_name">
+                                                <h4 class="mb-1">Category</h4>
+                                                <p class="mb-0">Sub category</p>
+                                            </div>
+                                            <div class="about-product">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Price</th>
+                                                            <td>Rs.3000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Quantity</th>
+                                                            <td>30</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Min-order</th>
+                                                            <td>1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Description</p>
+                                            </div> 
+                                            <div class="btn-section d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary my-2">Edit</a>
+                                                <a href="#" class="btn btn-danger my-2">Stock unavailable</a>
+                                            </div>                                           
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 shadow mb-5">
+                                        <img id="pic" src="http://placehold.it/400" alt="your image">
+                                        <div class="p-3 pl-detail">
+                                            <div class="product_name">
+                                                <h4 class="mb-1">Category</h4>
+                                                <p class="mb-0">Sub category</p>
+                                            </div>
+                                            <div class="about-product">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Price</th>
+                                                            <td>Rs.3000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Quantity</th>
+                                                            <td>30</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Min-order</th>
+                                                            <td>1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Description</p>
+                                            </div> 
+                                            <div class="btn-section d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary my-2">Edit</a>
+                                                <a href="#" class="btn btn-danger my-2">Stock unavailable</a>
+                                            </div>                                           
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 shadow mb-5">
+                                        <img id="pic" src="http://placehold.it/400" alt="your image">
+                                        <div class="p-3 pl-detail">
+                                            <div class="product_name">
+                                                <h4 class="mb-1">Category</h4>
+                                                <p class="mb-0">Sub category</p>
+                                            </div>
+                                            <div class="about-product">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Price</th>
+                                                            <td>Rs.3000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Quantity</th>
+                                                            <td>30</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Min-order</th>
+                                                            <td>1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Description</p>
+                                            </div> 
+                                            <div class="btn-section d-flex justify-content-between">
+                                                <a href="#" class="btn btn-primary my-2">Edit</a>
+                                                <a href="#" class="btn btn-danger my-2">Stock unavailable</a>
+                                            </div>                                           
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="address">
-                            <h3>Receiving Transition</h3>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Date</th>
-                                            <th>Product</th>
-                                            <th>Customer Name</th>
-                                            <th>Customer Location</th>
-                                            <th>Quantity sold</th>	 	 	 	 	
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>May 10, 2018</td>
-                                            <td><span class="success">Completed</span></td>
-                                            <td>$25.00 for 1 item </td>
-                                            <td><a href="cart.html" class="view">view</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>May 10, 2018</td>
-                                            <td>Processing</td>
-                                            <td>$17.00 for 1 item </td>
-                                            <td><a href="cart.html" class="view">view</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="tab-pane fade" id="orders">
+                                <h3 class="my-4">Home | Dashboard | Orders</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Order Date</th>
+                                                <th>Category</th>
+                                                <th>Subcategory</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th>Delivery Address</th>			
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product_thumb"><a href="#"><img src="images/product/product1.jpg" alt=""></a></td>                                                
+                                                <td>3 July 2020</td>
+                                                <td>DESI SEEDS</td>
+                                                <td>LADIES FINGER</td>
+                                                <td>1kg</td>
+                                                <td>100.00</td>
+                                                <td>Door no 3 86</td>
+                                                <td><span class="btn btn-danger">Rejected</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product_thumb"><a href="#"><img src="images/product/product1.jpg" alt=""></a></td>                                                
+                                                <td>3 July 2020</td>
+                                                <td>DESI SEEDS</td>
+                                                <td>LADIES FINGER</td>
+                                                <td>1kg</td>
+                                                <td>100.00</td>
+                                                <td>Door no 3 86</td>
+                                                <td><span class="btn btn-danger">Rejected</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pending">
+                                <h3 class="my-4">Home | Dashboard | Pending Orders</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Order Date</th>
+                                                <th>Category</th>
+                                                <th>Subcategory</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th>Delivery Address</th>			
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product_thumb"><a href="#"><img src="images/product/product1.jpg" alt=""></a></td>                                                
+                                                <td>3 July 2020</td>
+                                                <td>DESI SEEDS</td>
+                                                <td>LADIES FINGER</td>
+                                                <td>1kg</td>
+                                                <td>100.00</td>
+                                                <td>Door no 3 86</td>
+                                                <td><span class="btn btn-danger">Rejected</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product_thumb"><a href="#"><img src="images/product/product1.jpg" alt=""></a></td>                                                
+                                                <td>3 July 2020</td>
+                                                <td>DESI SEEDS</td>
+                                                <td>LADIES FINGER</td>
+                                                <td>1kg</td>
+                                                <td>100.00</td>
+                                                <td>Door no 3 86</td>
+                                                <td><span class="btn btn-danger">Rejected</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="purchase">
+                                <h3 class="my-4">Home | Dashboard | My Purchase</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Order Date</th>
+                                                <th>Category</th>
+                                                <th>Subcategory</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th>Delivery Address</th>			
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product_thumb"><a href="#"><img src="images/product/product1.jpg" alt=""></a></td>                                                
+                                                <td>3 July 2020</td>
+                                                <td>DESI SEEDS</td>
+                                                <td>LADIES FINGER</td>
+                                                <td>1kg</td>
+                                                <td>100.00</td>
+                                                <td>Door no 3 86</td>
+                                                <td><span class="btn btn-danger">Rejected</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product_thumb"><a href="#"><img src="images/product/product1.jpg" alt=""></a></td>                                                
+                                                <td>3 July 2020</td>
+                                                <td>DESI SEEDS</td>
+                                                <td>LADIES FINGER</td>
+                                                <td>1kg</td>
+                                                <td>100.00</td>
+                                                <td>Door no 3 86</td>
+                                                <td><span class="btn btn-danger">Rejected</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile">
+                                <h3 class="my-4">Home | Dashboard | Profile</h3>
+                                <form action="#" class="shadow">                                   
+                                    <div class="p-4 row">
+                                        <div class="col-lg-12 mb-20">
+                                            <h5 class="form-heading">Personal details</h5>
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <label>Name</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <label>Email</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <label>Mobile Number</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-12 mb-20">
+                                            <h5 class="form-heading">Farmx details</h5>
+                                        </div>                                       
+                                        <div class="col-lg-6 mb-20">
+                                            <label for="country">State</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <label for="country">District</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <label for="country">Mandal</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <label for="country">Village</label>
+                                            <input type="text">
+                                        </div>
+    
+                                        <div class="col-lg-6 mb-20">
+                                            <label>Address</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <label>Land Mark</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <label>PIN CODE</label>
+                                            <input type="text">
+                                        </div>  
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-      </section>
-      <!-- dashboard design end -->
+    </div>
+    </section>
+    <!-- dashboard design end -->
 
     <!-- footer -->
     <div class="footer">
@@ -442,8 +545,10 @@
                     <h2>About</h2>
                     <div class="content">
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sapiente accusamus,
-                            odit odio quisquam nihil veritatis saepe aliquam provident possimus illo facere obcaecati
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sapiente
+                            accusamus,
+                            odit odio quisquam nihil veritatis saepe aliquam provident possimus illo facere
+                            obcaecati
                             aperiam ducimus incidunt.
                         </p>
                     </div>
@@ -458,8 +563,7 @@
                             <li class="footer-item"><a href="#">Terms</a></li>
                             <li class="footer-item"><a href="#">Privacy</a></li>
                             <li class="footer-item"><a href="#">Blogs</a></li>
-                            <li class="footer-item"><a href="#">Android App</a></li>
-                            <li class="footer-item"><a href="#">Ios App</a></li>
+
                         </ul>
                     </div>
                 </div>

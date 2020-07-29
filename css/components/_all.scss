@@ -235,4 +235,17 @@ figure{
     top: 0;
     right: 0;
   }
-  
+  select,
+  input {
+    border: 1px solid #ededed;
+    background: none;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    color: #222222;
+    border-radius: 5px;
+}
+.l-signup a {
+    color: #80b82d;
+    text-decoration: underline;
+}

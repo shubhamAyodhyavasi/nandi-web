@@ -292,6 +292,22 @@ figure {
   right: 0;
 }
 
+select,
+input {
+  border: 1px solid #ededed;
+  background: none;
+  height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  color: #222222;
+  border-radius: 5px;
+}
+
+.l-signup a {
+  color: #80b82d;
+  text-decoration: underline;
+}
+
 .dark-bg {
   background-color: #20202D;
 }
@@ -305,6 +321,12 @@ figure {
 .main-header {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-header {
+    padding: 10px 30px;
+  }
 }
 
 .logo-wrapper {
@@ -325,6 +347,12 @@ figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  .login-wrapper {
+    margin: 20px 0px;
+  }
 }
 
 .login-wrapper .login {
@@ -405,6 +433,13 @@ figure {
   color: #ffffff;
   padding: 11px;
   border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-wrapper {
+    margin: auto;
+    width: 380px;
+  }
 }
 
 .breadcrumbs_area {
@@ -499,8 +534,18 @@ figure {
   position: relative;
 }
 
+@media only screen and (max-width: 767px) {
+  .backgroung-img {
+    background-image: linear-gradient(282deg, rgba(174, 213, 121, 0), rgba(99, 144, 56, 0.8)), url(./../images/bg-header.jpg);
+  }
+}
+
 .container-banner__family {
   width: 30%;
+}
+
+.banner-wrapper {
+  position: relative;
 }
 
 .banner-fixed {
@@ -512,6 +557,12 @@ figure {
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-fixed {
+    position: static;
+  }
 }
 
 .banner-heading {
@@ -552,17 +603,19 @@ h5.static-heading {
 }
 
 .banner-inner {
-  height: 70vh;
-}
-
-.banner-inner {
-  min-height: 70vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-inner {
+    min-height: unset;
+  }
 }
 
 .banner-inner:after {
@@ -586,6 +639,33 @@ h5.static-heading {
 .typing-effect p span.typed-text {
   color: #c7f584;
   margin-left: 10px;
+}
+
+#output {
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#output h1 {
+  text-align: left;
+  font-size: 70px;
+  word-spacing: -5px;
+  margin: 0px;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+#output p {
+  text-align: left;
+  font-size: 33px;
+  margin-top: -5px;
+  color: #fff;
 }
 
 .typing-effect p {
@@ -1585,6 +1665,19 @@ h5.static-heading {
   line-height: 24px;
 }
 
+.work-box img {
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+
+.work-box p.work-content {
+  text-align: center;
+  color: #797979;
+  font-size: 16px;
+  padding: 10px 0 0;
+}
+
 .footer {
   background-color: #33362f;
   color: #ffffff;
@@ -1749,6 +1842,10 @@ h5.static-heading {
 
 .login_submit {
   text-align: right;
+}
+
+.login_submit .login a {
+  line-height: 1;
 }
 
 .login_submit a {
@@ -3754,6 +3851,20 @@ h5.static-heading {
   border-bottom: 1px solid #ddd;
 }
 
+.tab-section input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.tab-section label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .panel-default input[type="radio"] {
   width: 15px;
   height: 15px;
@@ -3783,6 +3894,10 @@ h5.static-heading {
   color: #656464;
 }
 
+.DivToShowHide {
+  display: none;
+}
+
 /*checkout page css end*/
 .product-list {
   border: 1px solid #eee;
@@ -3800,10 +3915,11 @@ h5.static-heading {
   position: absolute;
   bottom: 0;
   left: 0;
-  /* right: 0; */
-  background: #80b82db0;
+  right: 0;
+  background: #ffffffab;
   padding: 10px;
   color: #fff;
+  text-align: center;
 }
 
 .product-list .price_box {
@@ -3835,5 +3951,37 @@ h5.static-heading {
   border: 1px solid #eee;
   border-right: 0;
   padding-left: 10px;
+}
+
+.dashboard_tab {
+  background: #20202d;
+}
+
+.dashboard_tab .nav-link {
+  color: #fff;
+  padding: 20px 10px;
+  border-bottom: 1px solid #ffffff4d;
+  font-size: 16px;
+}
+
+.dashboard_tab .nav-link.active {
+  background: #80b82d;
+}
+
+.d-profile {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.d-porduct table {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.d-porduct th,
+.d-porduct td {
+  border: 1px solid #efefef;
+  width: 50%;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
