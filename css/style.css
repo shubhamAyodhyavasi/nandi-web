@@ -1930,6 +1930,25 @@ h5.static-heading {
   margin: auto;
 }
 
+@media (max-width: 767px) {
+  .login-page:after {
+    display: none;
+  }
+  h2.font-weight-light {
+    color: #000;
+    margin-top: 30px;
+  }
+  p.pb-5 {
+    color: #000;
+  }
+  .account_form.register-img .pt-5 {
+    padding-top: 0 !important;
+  }
+  .account_form.register-img .pb-5 {
+    padding-bottom: 0 !important;
+  }
+}
+
 /*login page css end */
 /* 13. cart page css here */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
