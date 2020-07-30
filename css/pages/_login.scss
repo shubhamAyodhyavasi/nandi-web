@@ -102,5 +102,29 @@
 	
 }
 
-
+.login-page{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url('../images/login-gradient.svg'), url('../images/login-bg.png');
+        background-position: right top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        width: 60%;
+    }
+    .main-wrapper{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .customer_login{
+        margin: auto;
+    }
+}
 /*login page css end */

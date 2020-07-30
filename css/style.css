@@ -1799,6 +1799,40 @@ h5.static-heading {
   }
 }
 
+.login-page {
+  position: relative;
+}
+
+.login-page:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/login-gradient.svg"), url("../images/login-bg.png");
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 60%;
+}
+
+.login-page .main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.login-page .customer_login {
+  margin: auto;
+}
+
 /*login page css end */
 /* 13. cart page css here */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
