@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandikrushi</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- new icons -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- new linear icons -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="register_page ">
+
+    <div class="main-wrapper">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="top-left"><i class="fa fa-globe"></i> Language</p>
+                    </div>
+                    <div class="col text-right">
+                        <p class="top-right"><i class="fa fa-phone"></i> 0000XXXXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="navigation">
+            <div class="container">
+              <div class="brand">
+                <a href="index.html">
+                    <img class="img-fluid" src="images/logo.png">
+                </a>
+              </div>
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                  <li>
+                      <a href="#">
+                        <div class="search-wrapper">
+                            <div class="search-fields">
+                                <div class="search-city">
+                                    <input placeholder="Enter City" type="text">
+                                </div>
+                                <div class="search-category">
+                                    <select name="category" id="cate">
+                                        <option value="">Select categories</option>
+                                        <option value="CULTIVATOR">CULTIVATOR</option>
+                                        <option value="DESI COW MILK (A2 MILK)">DESI COW MILK (A2 MILK)</option>
+                                        <option value="DESI COWS FOR SALE">DESI COWS FOR SALE</option>
+                                        <option value="DESI SEEDS">DESI SEEDS</option>
+                                        <option value="DOCTOR">DOCTOR</option>
+                                        <option value="DRY FRUITS / NUTS">DRY FRUITS / NUTS</option>
+                                        <option value="ECO FRIENDLY">ECO FRIENDLY</option>
+                                        <option value="ENGLISH VEGETABLES">ENGLISH VEGETABLES</option>
+                                        <option value="EXACAVATOR">EXACAVATOR</option>
+                                    </select>
+                                </div>
+                                <div class="search-item">
+                                    <input placeholder="Search Item" type="text">
+                                </div>
+                            </div>
+                            <button class="search-btn half-circle">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </a>
+                  </li>                  
+                  <li>
+                    <a href="#!">Login</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="login.html">As a byer</a>
+                      </li>
+                      <li>
+                        <a href="login.html">As a byer</a>
+                      </li>
+                    </ul>
+                  </li>
+                 
+                  <li>
+                    <a href="#!">Register</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="#">As a byer</a>
+                      </li>
+                      <li>
+                        <a href="farmer-reg">As a farmer</a>
+                      </li>
+                      <li>
+                        <a href="register.html">As a Eco Friendly Seller</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="cart.html" class="cart cart-btn">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </nav>
+            </div>
+          </section>
+
+        <!-- banner section -->
+        <div class="breadcrumbs_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb_content">
+                            <h3>Register</h3>
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li>Register</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- customer login start -->
+    <div class="customer_login w-100 px-3">
+        <div class="container">
+            <div class="row">
+               <!--register area start-->
+               
+                <div class="col-lg-8 col-md-8 offset-2">
+                    <div class="account_form">
+                        <div class="col-md-12 ">
+                            <div class="wizard">
+                                <div class="wizard-inner">
+                                    <div class="connecting-line"></div>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab">1 </span> <i>Step 1</i></a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab">2</span> <i>Step 2</i></a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab">3</span> <i>Step 3</i></a>
+                                        </li>
+                                        <li role="presentation" class="disabled">
+                                            <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab">4</span> <i>Step 4</i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                                <form role="form" action="index.html" class="login-box">
+                                    <div class="tab-content" id="main_form">
+                                        <div class="tab-pane active" role="tabpanel" id="step1">
+                                            <h4>Personal Info</h4>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Firm/personal Name *</label> 
+                                                        <input class="form-control" type="text" name="name" placeholder=""> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Phone Number  *</label> 
+                                                        <input class="form-control" type="text" name="name" placeholder=""> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Email Address *</label> 
+                                                        <input class="form-control" type="email" name="name" placeholder=""> 
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Password *</label> 
+                                                        <input class="form-control" type="password" name="name" placeholder=""> 
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn next-step">Continue to next step</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="step2">
+                                            <h4>Production Location Details *</h4>
+                                            <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="country">Select State<span>*</span></label>
+                                                    <select class="select_option" name="cuntry" id="country">
+                                                        <option value="2">bangladesh</option>
+                                                        <option value="3">Algeria</option>
+                                                        <option value="4">Afghanistan</option>
+                                                        <option value="5">Ghana</option>
+                                                        <option value="6">Albania</option>
+                                                        <option value="7">Bahrain</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="9">Dominican Republic</option>
+            
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="country">Select District<span>*</span></label>
+                                                    <select class="select_option" name="cuntry" id="country">
+                                                        <option value="2">Select District</option>                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="country">Select City/Mandal<span>*</span></label>
+                                                    <select class="select_option" name="cuntry" id="country">
+                                                        <option value="2">City/Mandal</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="country">Select Village<span>*</span></label>
+                                                    <select class="select_option" name="cuntry" id="country">
+                                                        <option value="2">village</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Address 1 *</label> 
+                                                    <input class="form-control" type="text" name="name" placeholder=""> 
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Landmark</label> 
+                                                    <input class="form-control" type="text" name="name" placeholder=""> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Pincode *</label> 
+                                                    <input class="form-control" type="text" name="name" placeholder=""> 
+                                                </div>
+                                            </div>                                            
+                                           </div>
+                                            
+                                            
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn prev-step">Back</button></li>
+                                                <li><button type="button" class="default-btn next-step skip-btn">Skip</button></li>
+                                                <li><button type="button" class="default-btn next-step">Continue</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="step3">
+                                            <h4 class="text-center">Step 3</h4>
+                                             <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Account Name *</label> 
+                                                    <input class="form-control" type="text" name="name" placeholder=""> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Demo</label> 
+                                                    <input class="form-control" type="text" name="name" placeholder=""> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Inout</label> 
+                                                    <input class="form-control" type="text" name="name" placeholder=""> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Information</label> 
+                                                    <div class="custom-file">
+                                                      <input type="file" class="custom-file-input" id="customFile">
+                                                      <label class="custom-file-label" for="customFile">Select file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Number *</label> 
+                                                    <input class="form-control" type="text" name="name" placeholder=""> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Input Number</label> 
+                                                    <input class="form-control" type="text" name="name" placeholder=""> 
+                                                </div>
+                                            </div>
+                                               </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn prev-step">Back</button></li>
+                                                <li><button type="button" class="default-btn next-step skip-btn">Skip</button></li>
+                                                <li><button type="button" class="default-btn next-step">Continue</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" role="tabpanel" id="step4">
+                                            <h4 class="text-center">Step 4</h4>
+                                            <div class="all-info-container">
+                                                <div class="list-content">
+                                                    <a href="#listone" data-toggle="collapse" aria-expanded="false" aria-controls="listone">Collapse 1 <i class="fa fa-chevron-down"></i></a>
+                                                    <div class="collapse" id="listone">
+                                                        <div class="list-box">
+                                                            <div class="row">
+                                                                
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>First and Last Name *</label> 
+                                                                        <input class="form-control" type="text"  name="name" placeholder="" disabled="disabled"> 
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Phone Number *</label> 
+                                                                        <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-content">
+                                                    <a href="#listtwo" data-toggle="collapse" aria-expanded="false" aria-controls="listtwo">Collapse 2 <i class="fa fa-chevron-down"></i></a>
+                                                    <div class="collapse" id="listtwo">
+                                                        <div class="list-box">
+                                                            <div class="row">
+                                                                
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Address 1 *</label> 
+                                                                        <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>City / Town *</label> 
+                                                                        <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Country *</label> 
+                                                                        <select name="country2" class="form-control" id="country2" disabled="disabled">
+                                                                            <option value="NG" selected="selected">Nigeria</option>
+                                                                            <option value="NU">Niue</option>
+                                                                            <option value="NF">Norfolk Island</option>
+                                                                            <option value="KP">North Korea</option>
+                                                                            <option value="MP">Northern Mariana Islands</option>
+                                                                            <option value="NO">Norway</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                
+                                                                
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Legal Form</label> 
+                                                                        <select name="legalform2" class="form-control" id="legalform2" disabled="disabled">
+                                                                            <option value="" selected="selected">-Select an Answer-</option>
+                                                                            <option value="AG">Limited liability company</option>
+                                                                            <option value="GmbH">Public Company</option>
+                                                                            <option value="GbR">No minimum capital, unlimited liability of partners, non-busines</option>
+                                                                        </select> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Business Registration No.</label> 
+                                                                        <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Registered</label> 
+                                                                        <select name="vat2" class="form-control" id="vat2" disabled="disabled">
+                                                                            <option value="" selected="selected">-Select an Answer-</option>
+                                                                            <option value="yes">Yes</option>
+                                                                            <option value="no">No</option>
+                                                                        </select> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Seller</label> 
+                                                                        <input class="form-control" type="text" name="name" placeholder="" disabled="disabled"> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Company Name *</label> 
+                                                                        <input class="form-control" type="password" name="name" placeholder="" disabled="disabled"> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-content">
+                                                    <a href="#listthree" data-toggle="collapse" aria-expanded="false" aria-controls="listthree">Collapse 3 <i class="fa fa-chevron-down"></i></a>
+                                                    <div class="collapse" id="listthree">
+                                                        <div class="list-box">
+                                                            <div class="row">
+                                                                
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Name *</label> 
+                                                                        <input class="form-control" type="text" name="name" placeholder=""> 
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Number *</label> 
+                                                                        <input class="form-control" type="text" name="name" placeholder=""> 
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="default-btn prev-step">Back</button></li>
+                                                <li><button type="button" class="default-btn next-step">Finish</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                     </div>    
+                </div>
+                <!--register area end-->
+            </div>
+        </div>    
+    </div>
+    <!-- customer login end -->
+
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- custom-js -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- custom-js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

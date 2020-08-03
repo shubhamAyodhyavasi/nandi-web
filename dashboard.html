@@ -36,59 +36,83 @@
                 </div>
             </div>
         </div>
-        <div class="main-header dark-bg">
+        <section class="navigation">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <!-- <div class="col-md-3"> -->
-                    <div class="logo-wrapper">
-                        <img class="img-fluid" src="images/logo.png">
-                    </div>
-                    <!-- </div> -->
-                    <!-- <div class="col-md-7 m-auto"> -->
-                    <div class="search-wrapper">
-                        <div class="search-fields">
-                            <div class="search-city">
-                                <input placeholder="Enter City" type="text">
+              <div class="brand">
+                <a href="index.html">
+                    <img class="img-fluid" src="images/logo.png">
+                </a>
+              </div>
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                  <li>
+                      <a href="#">
+                        <div class="search-wrapper">
+                            <div class="search-fields">
+                                <div class="search-city">
+                                    <input placeholder="Enter City" type="text">
+                                </div>
+                                <div class="search-category">
+                                    <select name="category" id="cate">
+                                        <option value="">Select categories</option>
+                                        <option value="CULTIVATOR">CULTIVATOR</option>
+                                        <option value="DESI COW MILK (A2 MILK)">DESI COW MILK (A2 MILK)</option>
+                                        <option value="DESI COWS FOR SALE">DESI COWS FOR SALE</option>
+                                        <option value="DESI SEEDS">DESI SEEDS</option>
+                                        <option value="DOCTOR">DOCTOR</option>
+                                        <option value="DRY FRUITS / NUTS">DRY FRUITS / NUTS</option>
+                                        <option value="ECO FRIENDLY">ECO FRIENDLY</option>
+                                        <option value="ENGLISH VEGETABLES">ENGLISH VEGETABLES</option>
+                                        <option value="EXACAVATOR">EXACAVATOR</option>
+                                    </select>
+                                </div>
+                                <div class="search-item">
+                                    <input placeholder="Search Item" type="text">
+                                </div>
                             </div>
-                            <div class="search-category">
-                                <select name="category" id="cate">
-                                    <option value="">Select categories</option>
-                                    <option value="CULTIVATOR">CULTIVATOR</option>
-                                    <option value="DESI COW MILK (A2 MILK)">DESI COW MILK (A2 MILK)</option>
-                                    <option value="DESI COWS FOR SALE">DESI COWS FOR SALE</option>
-                                    <option value="DESI SEEDS">DESI SEEDS</option>
-                                    <option value="DOCTOR">DOCTOR</option>
-                                    <option value="DRY FRUITS / NUTS">DRY FRUITS / NUTS</option>
-                                    <option value="ECO FRIENDLY">ECO FRIENDLY</option>
-                                    <option value="ENGLISH VEGETABLES">ENGLISH VEGETABLES</option>
-                                    <option value="EXACAVATOR">EXACAVATOR</option>
-                                </select>
-                            </div>
-                            <div class="search-item">
-                                <input placeholder="Search Item" type="text">
-                            </div>
+                            <button class="search-btn half-circle">
+                                <i class="fa fa-search"></i>
+                            </button>
                         </div>
-                        <button class="search-btn half-circle">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                    <!-- </div> -->
-                    <div class="menus">
-                        <a href="farmer-reg.html">Natural Farmers</a>
-                    </div>
-                    <!-- <div class="col-md-2 m-auto text-right"> -->
-                    <div class="login-wrapper">
-                        <button class="login">
-                            <i class="fa fa-user"></i> Login
-                        </button>
-                        <button class="cart half-circle">
-                            <i class="fa fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                    <!-- </div> -->
-                </div>
+                    </a>
+                  </li>                  
+                  <li>
+                    <a href="#!">Login</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="login.html">As a byer</a>
+                      </li>
+                      <li>
+                        <a href="login.html">As a byer</a>
+                      </li>
+                    </ul>
+                  </li>
+                 
+                  <li>
+                    <a href="#!">Register</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="#">As a byer</a>
+                      </li>
+                      <li>
+                        <a href="farmer-reg">As a farmer</a>
+                      </li>
+                      <li>
+                        <a href="register.html">As a Eco Friendly Seller</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="cart.html" class="cart cart-btn">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </nav>
             </div>
-        </div>
+          </section>
 
         <!-- bannerx section -->
         <div class="breadcrumbs_area">
@@ -702,30 +726,26 @@
     <!-- footer -->
     <div class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row">                   
                 <div class="col-md-3 col-sm-6">
-                    <h2>About</h2>
+                    <h2>Customer Services</h2>
                     <div class="content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sapiente
-                            accusamus,
-                            odit odio quisquam nihil veritatis saepe aliquam provident possimus illo facere
-                            obcaecati
-                            aperiam ducimus incidunt.
-                        </p>
+                        <ul>
+                            <li class="footer-item"><a href="about.html">About</a></li>
+<li class="footer-item"><a href="help.html">Help Center</a></li>
+                            <li class="footer-item"><a href="terms.html">Terms & Conditions</a></li>
+                            <li class="footer-item"><a href="privacy.html">Privacy & Policies</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <h2>Other Links</h2>
+                    <h2>Customer Services</h2>
                     <div class="content">
                         <ul>
-                            <li class="footer-item"><a href="#">Home</a></li>
-                            <li class="footer-item"><a href="#">About</a></li>
-                            <li class="footer-item"><a href="#">Contact</a></li>
-                            <li class="footer-item"><a href="#">Terms</a></li>
-                            <li class="footer-item"><a href="#">Privacy</a></li>
-                            <li class="footer-item"><a href="#">Blogs</a></li>
-
+                            <li class="footer-item"><a href="login.html">User Login</a></li>
+                            <li class="footer-item"><a href="#">User Register</a></li>
+                            <li class="footer-item"><a href="login.html">Farmer Login</a></li>
+                            <li class="footer-item"><a href="farmer-reg.html">Farmer Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -773,6 +793,7 @@
             </div>
         </div>
     </div>
+    <!-- footer end -->
     </div>
 
 

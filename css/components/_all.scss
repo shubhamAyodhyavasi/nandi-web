@@ -249,3 +249,32 @@ figure{
     color: #80b82d;
     text-decoration: underline;
 }
+
+.bg-product{
+    position: relative;
+}
+.bg-product:before{
+    content: "";
+    background-image: url(./../images/veg-cat.png);
+    background-position: left;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* background-color: red; */
+    background-repeat: no-repeat;
+}
+.bg-product:after{
+    content: "";
+    background: linear-gradient(-270deg, white 0%, rgba(255, 44, 62, 0.25) 50%);
+    background-position: left;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+}

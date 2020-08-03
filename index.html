@@ -36,67 +36,140 @@
                 </div>
             </div>
         </div>
-        <div class="main-header dark-bg">
+        <section class="navigation">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <!-- <div class="col-md-3"> -->
-                        <div class="logo-wrapper">
-<a href="index.html">
-                            <img class="img-fluid" src="images/logo.png">
-</a>
-                        </div>
-                    <!-- </div> -->
-                    <!-- <div class="col-md-7 m-auto"> -->
-                        <div class="search-wrapper">
-                            <div class="search-fields" >
-                                <div class="search-city">
-                                    <input placeholder="Enter City" type="text">
+                <div class="brand">
+                    <a href="index.html">
+                        <img class="img-fluid" src="images/logo.png">
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">
+                                <div class="search-wrapper">
+                                    <div class="search-fields">
+                                        <div class="search-city">
+                                            <input placeholder="Enter City" type="text">
+                                        </div>
+                                        <div class="search-category">
+                                            <select name="category" id="cate">
+                                                <option value="">Select categories</option>
+                                                <option value="CULTIVATOR">CULTIVATOR</option>
+                                                <option value="DESI COW MILK (A2 MILK)">DESI COW MILK (A2 MILK)</option>
+                                                <option value="DESI COWS FOR SALE">DESI COWS FOR SALE</option>
+                                                <option value="DESI SEEDS">DESI SEEDS</option>
+                                                <option value="DOCTOR">DOCTOR</option>
+                                                <option value="DRY FRUITS / NUTS">DRY FRUITS / NUTS</option>
+                                                <option value="ECO FRIENDLY">ECO FRIENDLY</option>
+                                                <option value="ENGLISH VEGETABLES">ENGLISH VEGETABLES</option>
+                                                <option value="EXACAVATOR">EXACAVATOR</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-item">
+                                            <input placeholder="Search Item" type="text">
+                                        </div>
+                                    </div>
+                                    <button class="search-btn half-circle">
+                                        <i class="fa fa-search"></i>
+                                    </button>
                                 </div>
-                                <div class="search-category">
-                                    <select name="category" id="cate">
-                                        <option value="">Select categories</option>
-                                        <option value="CULTIVATOR">CULTIVATOR</option>
-                                        <option value="DESI COW MILK (A2 MILK)">DESI COW MILK (A2 MILK)</option>
-                                        <option value="DESI COWS FOR SALE">DESI COWS FOR SALE</option>
-                                        <option value="DESI SEEDS">DESI SEEDS</option>
-                                        <option value="DOCTOR">DOCTOR</option>
-                                        <option value="DRY FRUITS / NUTS">DRY FRUITS / NUTS</option>
-                                        <option value="ECO FRIENDLY">ECO FRIENDLY</option>
-                                        <option value="ENGLISH VEGETABLES">ENGLISH VEGETABLES</option>
-                                        <option value="EXACAVATOR">EXACAVATOR</option>
-                                    </select>
-                                </div>
-                                <div class="search-item">
-                                    <input placeholder="Search Item" type="text">
-                                </div>
-                            </div>
-                            <button class="search-btn half-circle">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    <!-- </div> -->
-                        <div class="menus">
-                            <a href="farmer-reg.html">Natural Farmers</a>
-                        </div>
-                    <!-- <div class="col-md-2 m-auto text-right"> -->
-                        <div class="login-wrapper">
-                            <a class="login" href="login.html">
-                                <i class="fa fa-user"></i> Login
                             </a>
-                            <a href="cart.html" class="cart half-circle">
+                        </li>
+                        <li>
+                            <a href="#!">Login</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="login.html">As a byer</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">As a byer</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#!">Register</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#">As a byer</a>
+                                </li>
+                                <li>
+                                    <a href="farmer-reg">As a farmer</a>
+                                </li>
+                                <li>
+                                    <a href="register.html">As a Eco Friendly Seller</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="cart.html" class="cart cart-btn">
                                 <i class="fa fa-shopping-cart"></i>
                             </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- <div class="main-header dark-bg">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="logo-wrapper">
+                        <a href="index.html">
+                            <img class="img-fluid" src="images/logo.png">
+                        </a>
+                    </div>
+                    <div class="search-wrapper">
+                        <div class="search-fields">
+                            <div class="search-city">
+                                <input placeholder="Enter City" type="text">
+                            </div>
+                            <div class="search-category">
+                                <select name="category" id="cate">
+                                    <option value="">Select categories</option>
+                                    <option value="CULTIVATOR">CULTIVATOR</option>
+                                    <option value="DESI COW MILK (A2 MILK)">DESI COW MILK (A2 MILK)</option>
+                                    <option value="DESI COWS FOR SALE">DESI COWS FOR SALE</option>
+                                    <option value="DESI SEEDS">DESI SEEDS</option>
+                                    <option value="DOCTOR">DOCTOR</option>
+                                    <option value="DRY FRUITS / NUTS">DRY FRUITS / NUTS</option>
+                                    <option value="ECO FRIENDLY">ECO FRIENDLY</option>
+                                    <option value="ENGLISH VEGETABLES">ENGLISH VEGETABLES</option>
+                                    <option value="EXACAVATOR">EXACAVATOR</option>
+                                </select>
+                            </div>
+                            <div class="search-item">
+                                <input placeholder="Search Item" type="text">
+                            </div>
                         </div>
-                    <!-- </div> -->
+                        <button class="search-btn half-circle">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="menus">
+                        <a href="farmer-reg.html">Natural Farmers</a>
+                    </div>
+                    <div class="login-wrapper">
+                        <a class="login" href="login.html">
+                            <i class="fa fa-user"></i> Login
+                        </a>
+                        <a href="cart.html" class="cart half-circle">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section class="banner-wrapper mb-80">
-            <div class="banner-inner backgroung-img">
+        </div> -->
+
+
+        <section class="banner-wrapper mb-5">
+            <div class="banner-inner backgroung-img w-100">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-sm-12 mb-20">
-                            <div class="banner-content mt-5">
+                            <div class="banner-content mt-2">
                                 <h5 class="banner-heading">A B2B DIGITAL MARKETPLACE WHERE FAIR FOOD TRADE IS MADE EASY,
                                     FAST AND TRANSPARENT!</h5>
                                 <div class="output" id="output">
@@ -114,13 +187,11 @@
                     Choose from 20+ Categories
                 </h5>
 
-                <div class="align-content-center d-flex flex-wrap justify-content-center mt-5 static-icon">
+                <div class="align-content-center d-flex flex-wrap justify-content-center mt-3 static-icon">
                     <div class="container-banner__family">
                         <a href="#">
                             <div class="circle-white">
-                                <img class="product__img"
-                                    src="images/Cashew.png"
-                                    alt="category">
+                                <img class="product__img" src="images/Cashew.png" alt="category">
                             </div>
                             <p class="product__text">Cashew </p>
                         </a>
@@ -128,9 +199,7 @@
                     <div class="container-banner__family">
                         <a href="#">
                             <div class="circle-white">
-                                <img class="product__img"
-                                    src="images/Agroimp__0009_coffee.png"
-                                    alt="category">
+                                <img class="product__img" src="images/Agroimp__0009_coffee.png" alt="category">
                             </div>
                             <p class="product__text">Coffee</p>
                         </a>
@@ -138,9 +207,7 @@
                     <div class="container-banner__family">
                         <a href="#">
                             <div class="circle-white">
-                                <img class="product__img"
-                                    src="images/Agroimp__0016_nuts2.png"
-                                    alt="category">
+                                <img class="product__img" src="images/Agroimp__0016_nuts2.png" alt="category">
                             </div>
                             <p class="product__text">Nuts</p>
                         </a>
@@ -148,9 +215,7 @@
                     <div class="container-banner__family">
                         <a href="#">
                             <div class="circle-white">
-                                <img class="product__img"
-                                    src="images/Agroimp__0017_cereals.png"
-                                    alt="category">
+                                <img class="product__img" src="images/Agroimp__0017_cereals.png" alt="category">
                             </div>
                             <p class="product__text">Grains </p>
                         </a>
@@ -158,9 +223,47 @@
                     <div class="container-banner__family">
                         <a href="#">
                             <div class="circle-white">
-                                <img class="product__img"
-                                    src="images/Azeite.png"
-                                    alt="category">
+                                <img class="product__img" src="images/Azeite.png" alt="category">
+                            </div>
+                            <p class="product__text">Olive Oil</p>
+                        </a>
+                    </div>
+                    <div class="container-banner__family">
+                        <a href="#">
+                            <div class="circle-white">
+                                <img class="product__img" src="images/Cashew.png" alt="category">
+                            </div>
+                            <p class="product__text">Cashew </p>
+                        </a>
+                    </div>
+                    <div class="container-banner__family">
+                        <a href="#">
+                            <div class="circle-white">
+                                <img class="product__img" src="images/Agroimp__0009_coffee.png" alt="category">
+                            </div>
+                            <p class="product__text">Coffee</p>
+                        </a>
+                    </div>
+                    <div class="container-banner__family">
+                        <a href="#">
+                            <div class="circle-white">
+                                <img class="product__img" src="images/Agroimp__0016_nuts2.png" alt="category">
+                            </div>
+                            <p class="product__text">Nuts</p>
+                        </a>
+                    </div>
+                    <div class="container-banner__family">
+                        <a href="#">
+                            <div class="circle-white">
+                                <img class="product__img" src="images/Agroimp__0017_cereals.png" alt="category">
+                            </div>
+                            <p class="product__text">Grains </p>
+                        </a>
+                    </div>
+                    <div class="container-banner__family">
+                        <a href="#">
+                            <div class="circle-white">
+                                <img class="product__img" src="images/Azeite.png" alt="category">
                             </div>
                             <p class="product__text">Olive Oil</p>
                         </a>
@@ -168,7 +271,7 @@
                 </div>
 
                 <button class="btn mt-4 read-more">
-                    Read More
+                    Explore more
                 </button>
             </div>
         </section>
@@ -195,11 +298,15 @@
                             <h3>Nandi Krushi is a digital marketplace that brings
                                 together organic (ZBNF / SPNF / Certified / PGS-Green /
                                 PGS-organic) farmers and related FPOs/ FPC’s.</h3>
-                            <p>NandiKrushi aims to provide a digital platform to natural/organic (ZBNF / SPNF / Certified / PGSGreen / PGS-organic)) farmers across india by enabling a marketplace where farmers are free to
-                                set price of their produce and sell their produce to all registered and verified buyers .
+                            <p>NandiKrushi aims to provide a digital platform to natural/organic (ZBNF / SPNF /
+                                Certified / PGSGreen / PGS-organic)) farmers across india by enabling a marketplace
+                                where farmers are free to
+                                set price of their produce and sell their produce to all registered and verified buyers
+                                .
                                 NandiKrushi Marketplace will soon accommodates online payments between buyer and seller,
                                 product quality check options, and end-to-end logistic services.</p>
-                            <h5>Nandi Marketplace does not buy or sell crops and is not a broker. Instead, we offer Indian farmers
+                            <h5>Nandi Marketplace does not buy or sell crops and is not a broker. Instead, we offer
+                                Indian farmers
                                 the ability to effortlessly market their crop via our platform</h5>
                             <div class="btn-wrapper d-flex justify-content-between mt-3">
                                 <a class="btn theme-button w-50"> Explore markert </a>
@@ -252,7 +359,7 @@
         </section>
 
         <!-- best sellers -->
-        <section class="product_banner_area color_two mb-65">
+        <!-- <section class="product_banner_area color_two mb-65">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -1124,6 +1231,719 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+
+        <!-- our Product -->
+        <section class="ourProduct mb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section_title">
+                            <p>Recently added our solution</p>
+                            <h2>Our Products</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-product">
+                    <div class="col-md-3">
+                        <div class="pro-option">
+                            <div class="category-title">Vegetable</div>
+                            <div class="category-btn">See More</div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content our-product">
+                            <div class="tab-pane fade show active" id="plant1" role="tabpanel">
+                                <div class="product_carousel product_column5 owl-carousel">
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product1.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product2.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                    <span class="label_new">New</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Aliquam</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$26.00</span>
+                                                    <span class="old_price">$362.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product3.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product4.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Donec Non
+                                                        Est</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$46.00</span>
+                                                    <span class="old_price">$382.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product5.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product6.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Etiam
+                                                        Gravida</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$56.00</span>
+                                                    <span class="old_price">$322.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product7.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product8.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                    <span class="label_new">New</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Fusce
+                                                        Aliquam</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$66.00</span>
+                                                    <span class="old_price">$312.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product9.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product10.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Letraset
+                                                        Sheets</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$38.00</span>
+                                                    <span class="old_price">$262.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product11.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product12.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                    <span class="label_new">New</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Lorem Ipsum
+                                                        Lec</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$36.00</span>
+                                                    <span class="old_price">$145.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="plant2" role="tabpanel">
+                                <div class="product_carousel product_column5 owl-carousel">
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product13.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product1.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                    <span class="label_new">New</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Mauris Vel
+                                                        Tellus</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$48.00</span>
+                                                    <span class="old_price">$257.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product12.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product2.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Nunc Neque
+                                                        Eros</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$35.00</span>
+                                                    <span class="old_price">$245.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product11.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product3.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Proin Lectus
+                                                        Ipsum</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$26.00</span>
+                                                    <span class="old_price">$362.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product9.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product4.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                    <span class="label_new">New</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Quisque In
+                                                        Arcu</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$55.00</span>
+                                                    <span class="old_price">$235.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product8.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product5.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Cas Meque
+                                                        Metus</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$26.00</span>
+                                                    <span class="old_price">$362.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product7.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product6.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Aliquam
+                                                        Consequat</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$26.00</span>
+                                                    <span class="old_price">$362.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="plant3" role="tabpanel">
+                                <div class="product_carousel product_column5 owl-carousel">
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product11.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product3.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Proin Lectus
+                                                        Ipsum</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$26.00</span>
+                                                    <span class="old_price">$362.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product9.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product4.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                    <span class="label_new">New</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Quisque In
+                                                        Arcu</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$55.00</span>
+                                                    <span class="old_price">$235.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product13.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product1.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                    <span class="label_new">New</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Mauris Vel
+                                                        Tellus</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$48.00</span>
+                                                    <span class="old_price">$257.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product12.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product2.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Nunc Neque
+                                                        Eros</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$35.00</span>
+                                                    <span class="old_price">$245.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product1.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product2.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                    <span class="label_new">New</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Aliquam
+                                                        Consequat</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$26.00</span>
+                                                    <span class="old_price">$362.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                    <article class="single_product">
+                                        <figure>
+                                            <div class="product_thumb">
+                                                <a class="primary_img" href="product-details.html"><img
+                                                        src="images/product/product3.jpg" alt=""></a>
+                                                <a class="secondary_img" href="product-details.html"><img
+                                                        src="images/product/product4.jpg" alt=""></a>
+                                                <div class="label_product">
+                                                    <span class="label_sale">Sale</span>
+                                                </div>
+                                                <div class="action_links">
+                                                    <ul>
+                                                        <li class="add_to_cart"><a href="cart.html"
+                                                                title="Add to cart"><span
+                                                                    class="lnr lnr-cart"></span></a></li>
+                                                        <li class="quick_button"><a href="#" data-toggle="modal"
+                                                                data-target="#modal_box" title="quick view"> <span
+                                                                    class="lnr lnr-magnifier"></span></a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"
+                                                                title="Add to Wishlist"><span
+                                                                    class="lnr lnr-heart"></span></a></li>
+                                                        <li class="compare"><a href="#" title="Add to Compare"><span
+                                                                    class="lnr lnr-sync"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <figcaption class="product_content">
+                                                <h4 class="product_name"><a href="product-details.html">Donec Non
+                                                        Est</a></h4>
+                                                <p><a href="#">Fruits</a></p>
+                                                <div class="price_box">
+                                                    <span class="current_price">$46.00</span>
+                                                    <span class="old_price">$382.00</span>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- how we work -->
@@ -1141,27 +1961,31 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 mb-20">
                         <div class="work-box">
                             <img src="images/6.png">
-                            <p class="work-content">Simply Add to cart whatever you wish to buy, whether its fruits, veggies or groceries, We have got you all covered.</p>
+                            <p class="work-content">Simply Add to cart whatever you wish to buy, whether its fruits,
+                                veggies or groceries, We have got you all covered.</p>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 mb-20">
                         <div class="work-box">
                             <img src="images/7.png">
-                            <p class="work-content">Simply Add to cart whatever you wish to buy, whether its fruits, veggies or groceries, We have got you all covered.</p>
+                            <p class="work-content">Simply Add to cart whatever you wish to buy, whether its fruits,
+                                veggies or groceries, We have got you all covered.</p>
                         </div>
-                    </div>                  
+                    </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 mb-20">
                         <div class="work-box">
                             <img src="images/8.png">
-                            <p class="work-content">Simply Add to cart whatever you wish to buy, whether its fruits, veggies or groceries, We have got you all covered.</p>
+                            <p class="work-content">Simply Add to cart whatever you wish to buy, whether its fruits,
+                                veggies or groceries, We have got you all covered.</p>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 mb-20">
                         <div class="work-box">
                             <img src="images/9.png">
-                            <p class="work-content">Simply Add to cart whatever you wish to buy, whether its fruits, veggies or groceries, We have got you all covered.</p>
+                            <p class="work-content">Simply Add to cart whatever you wish to buy, whether its fruits,
+                                veggies or groceries, We have got you all covered.</p>
                         </div>
-                    </div>                  
+                    </div>
                 </div>
             </div>
         </section>
@@ -1512,24 +2336,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <h2>About</h2>
+                        <h2>Customer Services</h2>
                         <div class="content">
-                            <p>                              
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sapiente accusamus, odit odio quisquam nihil veritatis saepe aliquam provident possimus illo facere obcaecati aperiam ducimus incidunt.
-                            </p>
+                            <ul>
+                                <li class="footer-item"><a href="about.html">About</a></li>
+                                <li class="footer-item"><a href="help.html">Help Center</a></li>
+                                <li class="footer-item"><a href="terms.html">Terms & Conditions</a></li>
+                                <li class="footer-item"><a href="privacy.html">Privacy & Policies</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <h2>Other Links</h2>
+                        <h2>Customer Services</h2>
                         <div class="content">
                             <ul>
-                                <li class="footer-item"><a href="#">Home</a></li>
-                                <li class="footer-item"><a href="#">About</a></li>
-                                <li class="footer-item"><a href="#">Contact</a></li>
-                                <li class="footer-item"><a href="#">Terms</a></li>
-                                <li class="footer-item"><a href="#">Privacy</a></li>
-                                <li class="footer-item"><a href="#">Blogs</a></li>
-                                
+                                <li class="footer-item"><a href="login.html">User Login</a></li>
+                                <li class="footer-item"><a href="#">User Register</a></li>
+                                <li class="footer-item"><a href="login.html">Farmer Login</a></li>
+                                <li class="footer-item"><a href="farmer-reg.html">Farmer Register</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1537,7 +2361,7 @@
                         <h2>Contact</h2>
                         <div class="content">
                             <p>Payakarao Bonangi, Paravada, Visakhapatnam - 531021</p>
-                            <a href="https://goo.gl/maps/C1ZN9Yo996Whoenz5" target="_blank" >
+                            <a href="https://goo.gl/maps/C1ZN9Yo996Whoenz5" target="_blank">
                                 <img class="img-fluid map-img" src="./images/footer-map.png" alt="map" />
                             </a>
                         </div>
@@ -1555,17 +2379,17 @@
                         </div>
                     </div>
                 </div>
-            </div>           
+            </div>
         </div>
         <div class="footer_bottom">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-7">
                         <div class="copyright_area">
-                            <p>Copyright  © 2020  <a href="#">support@nandikrushi.in</a></p>
+                            <p>Copyright © 2020 <a href="#">support@nandikrushi.in</a></p>
                         </div>
-                    </div>    
-                    <div class="col-lg-6 col-md-5">    
+                    </div>
+                    <div class="col-lg-6 col-md-5">
                         <div class="footer_payment">
                             <ul>
                                 <li><a href="#"><i class="ion-social-facebook"></i></a></li>
@@ -1575,8 +2399,9 @@
                         </div>
                     </div>
                 </div>
-             </div>   
+            </div>
         </div>
+        <!-- footer end -->
     </div>
 
 
